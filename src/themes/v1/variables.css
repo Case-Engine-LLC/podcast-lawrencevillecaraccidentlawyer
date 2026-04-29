@@ -1,35 +1,42 @@
 /* ============================================
    CSS VARIABLES - PODCAST TEMPLATE
+   Yari Lawson / Lawrenceville palette
+   Primary #283142 dark navy | Secondary #93A0BE blue-gray | Accent #283142
+   Source: Figma "Podcast - Lawson" Brand Colors swatches (fdZQKoDmrrI8deFmAQBj6k)
    ============================================ */
 
 :root {
   /* ========== COLORS ========== */
   /* Primary Colors */
-  --color-primary: #070519;
-  --color-secondary: #FAA31A;
+  --color-primary: #283142;
+  --color-primary-hover: #1E2532;
+  --color-primary-deep: #141923;
+  --color-secondary: #93A0BE;
+  --color-secondary-hover: #7A88A8;
+  --color-secondary-deep: #5F6E8E;
 
   /* Accent & Neutral Colors */
-  --color-accent: #c9c9c9;
+  --color-accent: #283142;
   --color-background: #ffffff;
-  --color-foreground: #000000;
+  --color-foreground: #283142;
 
   /* Muted Colors */
-  --color-muted: #f1f2f4;
+  --color-muted: #f5f5f7;
   --color-muted-foreground: #676767;
 
   /* Card Colors */
   --color-card: #eeeef0;
-  --color-card-foreground: #151823;
+  --color-card-foreground: #283142;
 
   /* Border & Divider */
   --color-border: #d9d9d9;
 
   /* Additional UI Colors */
-  --color-gray-dark: #6f6f6f;
+  --color-gray-dark: #353535;
   --color-gray-light: #9e9e9e;
   --color-gray-lighter: #616161;
   --color-beige: #e1dddc;
-  --color-dark-bg: #070519;
+  --color-dark-bg: #283142;
 
   /* ========== TYPOGRAPHY ========== */
   --font-heading: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
