@@ -1,0 +1,21 @@
+{
+  "name": "Lawrenceville Car Accident Law w. Yari Lawson",
+  "short_name": "Lawson Law",
+  "description": "Weekly podcast with Yari Lawson, Principal Trial Attorney at Lawson Personal Injury Attorneys, covering Georgia personal injury and wrongful death matters from Lawrenceville and metro Atlanta.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#283142",
+  "theme_color": "#283142",
+  "icons": [
+    {
+      "src": "/icon",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-icon",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

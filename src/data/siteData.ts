@@ -1,11 +1,14 @@
 /**
- * Site Data — Generated from Case Engine AI
- * Updated: 2026-03-10T16:26:20.720238+00:00
+ * Site Data — Lawson Personal Injury Attorneys
+ * Sourced from the firm's Podcast Show Bible (zip_195524) on 2026-04-30.
+ * Fields flagged "NEEDS CONFIRMATION" in the Bible are left at neutral defaults
+ * rather than fabricated.
  */
 
 export const siteConfig = {
-  "podcastName": "Lawrenceville Catastrophic Injury Law w. Yari Lawson",
-  "tagline": "NEW EPISODE",
+  "podcastName": "Lawrenceville Car Accident Law w. Yari Lawson",
+  "tagline": "We Don't Flinch",
+  "podcastUrl": "https://podcast-lawrencevillecaraccidentlawyer.vercel.app",
   "platformLinks": {
     "apple": "#",
     "spotify": "#"
@@ -18,56 +21,83 @@ export const siteConfig = {
 
 export const episode = {
   "number": 1,
-  "title": "Understanding Your Rights After a Catastrophic Injury in Georgia",
+  "title": "What to Do After a Car Accident in Lawrenceville, Georgia",
   "date": "01.15.24",
   "duration": "00:45:30",
-  "description": "In this inaugural episode, Yari Lawson explores the critical first steps injury victims should take after experiencing a catastrophic accident in Lawrenceville and throughout Gwinnett County. Yari discusses common mistakes that can jeopardize your claim, explains Georgia's comparative negligence laws, and shares insights from decades of representing injured clients. This episode provides essential guidance for anyone navigating the complex aftermath of a serious personal injury."
+  "description": "Yari Lawson, founder of Lawson Personal Injury Attorneys and a former prosecutor with 20+ years of trial experience, walks through the practical first steps for anyone injured in a car wreck on I-85, I-285, or anywhere in Gwinnett County. She breaks down what to say to the insurance adjuster who calls the next day, how Georgia's comparative negligence rule changes the calculus, and the documentation mistakes that quietly cost people thousands."
 };
 
 export const attorney = {
   "name": "Yari Lawson",
   "firm": "Lawson Personal Injury Attorneys",
-  "title": "Founding Attorney & Host",
+  "title": "Principal Trial Attorney & Founder",
   "bio": [
-    "Yari Lawson is the founding attorney of Lawson Personal Injury Attorneys, a dedicated personal injury law firm serving Lawrenceville, Georgia and the surrounding Gwinnett County communities. With extensive experience representing victims of catastrophic injuries, Yari Lawson has built a reputation for aggressive advocacy and compassionate client service. Yari Lawson understands that serious accidents involving cars, trucks, motorcycles, and pedestrians can devastate families financially, physically, and emotionally, which is why Yari Lawson fights tirelessly to secure maximum compensation for every client.",
-    "Throughout a distinguished legal career, Yari Lawson has successfully handled complex personal injury cases ranging from traumatic brain injuries and wrongful death claims to slip and fall accidents and dog bite incidents. Yari Lawson's approach combines thorough investigation, expert collaboration, and strategic negotiation to build compelling cases that insurance companies cannot ignore. When settlement negotiations fail to produce fair results, Yari Lawson is fully prepared to take cases to trial to protect clients' rights.",
-    "Beyond the courtroom, Yari Lawson is committed to educating the Lawrenceville community about personal injury law through this podcast and various community outreach initiatives. Yari Lawson believes that informed citizens are empowered citizens, and that understanding your legal rights is the first step toward justice after an injury. When not advocating for clients, Yari Lawson enjoys giving back to the Gwinnett County community and staying connected with the people who make Lawrenceville a special place to live and work."
+    "Yari Lawson is the Principal Trial Attorney and founder of Lawson Personal Injury Attorneys in Lawrenceville, Georgia. With 20+ years of trial experience and a background as a former prosecutor, Yari has spent her career studying how the other side builds and attacks injury cases. That perspective shapes how the firm represents clients in Gwinnett County and the broader metro Atlanta area: every case is built the way a prosecutor builds a case, knowing exactly how the defense and the insurance company will come at it.",
+    "Lawson Personal Injury Attorneys handles serious injury and wrongful death matters across Georgia, including car accidents, truck accidents, motorcycle crashes, traumatic brain injuries, catastrophic injuries, slip and fall cases, dog bites, pedestrian and rideshare incidents, premises liability, and product liability. The firm's brand line, \"Serious Injuries Demand Relentless Lawyers. We Don't Flinch,\" reflects how Yari approaches insurance carriers, trucking companies, and defense firms on behalf of clients.",
+    "Yari created this podcast as part of an owned-funnel approach to client communication. Rather than buying billboards or rented leads, she puts plain-language injury education in front of the people who need it most, scared, in pain, and trying to figure out whether they have a case at 11pm from their couch. Episodes treat Spanish-speaking listeners with the same depth and respect as English-speakers, reflecting the multilingual client base the firm serves in metro Atlanta."
   ],
   "signature": "/images/signature.png",
   "photo": "/images/attorney.jpg"
 };
 
 export const contact = {
-  "address": "Lawrenceville, Georgia",
-  "phone": "(770) 555-0123",
+  "address": "320 South Perry Street, Lawrenceville, GA 30046",
+  "phone": "(678) 446-3655",
   "email": "contact@lawsonfirm.com",
-  "website": "https://www.lawsonfirm.com"
+  "website": "https://www.lawsonfirm.com/en"
+};
+
+export const compliance: {
+  jurisdiction: string
+  firm: string
+  responsibleAttorneys: { name: string; barNumber: string }[]
+  disclaimers: { kind: string; text: string }[]
+} = {
+  "jurisdiction": "GA",
+  "firm": "Lawson Personal Injury Attorneys",
+  "responsibleAttorneys": [
+    { "name": "Yari Lawson", "barNumber": "" }
+  ],
+  "disclaimers": [
+    {
+      "kind": "advertising",
+      "text": "This podcast is attorney advertising under the Georgia Rules of Professional Conduct. The information presented is for general educational purposes only and is not legal advice. Listening to this podcast does not create an attorney-client relationship with Yari Lawson or Lawson Personal Injury Attorneys."
+    },
+    {
+      "kind": "no-results-guarantee",
+      "text": "Past results do not guarantee similar outcomes. Every case is unique and must be evaluated on its own facts. Hiring a lawyer is an important decision that should not be based solely on advertising."
+    },
+    {
+      "kind": "jurisdiction",
+      "text": "Lawson Personal Injury Attorneys is licensed to practice law in Georgia. Out-of-state matters are handled in association with locally licensed counsel where required by Georgia Rule of Professional Conduct 5.5."
+    }
+  ]
 };
 
 export const chapters = [
   {
     "number": 1,
-    "title": "Immediate Steps After a Catastrophic Injury",
+    "title": "First Moves at the Scene of a Crash",
     "active": false
   },
   {
     "number": 2,
-    "title": "Understanding Georgia's Comparative Negligence Laws",
+    "title": "How Georgia's Comparative Negligence Rule Works",
     "active": false
   },
   {
     "number": 3,
-    "title": "Dealing with Insurance Companies and Adjusters",
+    "title": "What to Say (and Not Say) to the Insurance Adjuster",
     "active": false
   },
   {
     "number": 4,
-    "title": "Calculating the True Value of Your Injury Claim",
+    "title": "Why the Defense Will Argue You Caused Your Own Injuries",
     "active": false
   },
   {
     "number": 5,
-    "title": "When to Consider Filing a Personal Injury Lawsuit",
+    "title": "When a Case Settles and When It Goes to Trial",
     "active": false
   }
 ];
@@ -75,67 +105,67 @@ export const chapters = [
 export const faqGroups = [
   {
     "label": "About the Podcast",
-    "description": "Learn more about Lawrenceville Catastrophic Injury Law and what to expect from each episode",
+    "description": "How this show is structured and who it's for",
     "questions": [
       {
-        "question": "What topics does Yari Lawson cover on this podcast?",
+        "question": "What does Yari Lawson cover on this podcast?",
         "level": "h2",
-        "answer": "Yari Lawson discusses a wide range of personal injury topics including car accidents, truck accidents, motorcycle collisions, slip and fall cases, and wrongful death claims specific to Georgia law. Each episode provides practical legal insights for Lawrenceville residents dealing with catastrophic injuries and navigating the claims process."
+        "answer": "Each episode takes one real injury scenario, a car wreck on I-85, a truck collision on I-285, a slip and fall at a big box store, a dog bite in a Lawrenceville neighborhood, and walks through it completely. Yari, a former prosecutor with 20+ years of trial experience, explains how the defense will attack the case, what the injured client should do this week, and how Georgia law applies. Topics include car accidents, truck accidents, motorcycle crashes, wrongful death, traumatic brain injuries, slip and falls, dog bites, pedestrian and rideshare cases, premises liability, and product liability."
       },
       {
         "question": "How often are new episodes released?",
         "level": "h3",
-        "answer": "New episodes of Lawrenceville Catastrophic Injury Law are released regularly to provide timely legal information to the community. Yari Lawson covers current personal injury topics, recent case developments, and answers common questions from Georgia accident victims."
+        "answer": "New episodes drop weekly. The full format runs 60-90 minutes; shorter extension episodes run 20-30 minutes when the topic is tighter."
       },
       {
-        "question": "Who should listen to this podcast?",
+        "question": "Who is this podcast for?",
         "level": "h3",
-        "answer": "This podcast is valuable for anyone in the Lawrenceville and greater Georgia area who has been injured in an accident, family members supporting injured loved ones, or anyone wanting to understand their legal rights after a personal injury. Yari Lawson makes complex legal concepts accessible to everyone."
+        "answer": "People in Lawrenceville, Gwinnett County, and the broader metro Atlanta area who have just been injured in an accident, family members researching options on their behalf, and Spanish-speaking residents trying to understand the legal system. Adjacent attorneys and medical providers who refer or treat injury patients also use the show as a reference for how cases actually move through the Georgia system."
       },
       {
-        "question": "Can I submit questions for the podcast?",
+        "question": "Does Yari speak Spanish on the show?",
         "level": "h3",
-        "answer": "Yes, Yari Lawson welcomes questions from listeners about personal injury law in Georgia. You can contact Lawson Personal Injury Attorneys through their website at lawsonfirm.com to submit topics or questions you would like addressed in future episodes."
+        "answer": "The firm serves a multilingual client base in metro Atlanta and publishes Spanish-language client testimonials. Episodes are produced in English with Spanish-accessible distribution, and listeners who need a Spanish-speaking team member at the firm can reach Lawson Personal Injury Attorneys directly at (678) 446-3655."
       }
     ]
   },
   {
     "label": "Personal Injury Law in Georgia",
-    "description": "Common questions about personal injury cases and legal rights in Lawrenceville and throughout Georgia",
+    "description": "Common questions about how injury cases actually work in Lawrenceville and Gwinnett County",
     "questions": [
       {
         "question": "How long do I have to file a personal injury claim in Georgia?",
         "level": "h2",
-        "answer": "In Georgia, the statute of limitations for most personal injury cases is two years from the date of the accident. However, certain circumstances can affect this timeline, which is why it is critical to contact Yari Lawson at Lawson Personal Injury Attorneys as soon as possible after your injury to protect your rights."
+        "answer": "Georgia's statute of limitations for most personal injury cases is two years from the date of the injury (O.C.G.A. § 9-3-33). Shorter deadlines apply to claims against government entities and longer deadlines apply to certain wrongful death scenarios. Because evidence and witness memory degrade quickly, the firm recommends speaking with an attorney as soon as you are medically able rather than waiting near the deadline."
       },
       {
-        "question": "What compensation can I recover in a Lawrenceville personal injury case?",
+        "question": "What can I recover in a Lawrenceville personal injury case?",
         "level": "h2",
-        "answer": "Yari Lawson helps clients recover compensation for medical expenses, lost wages, pain and suffering, property damage, and in severe cases, punitive damages. For wrongful death cases, families may also recover funeral expenses and loss of companionship under Georgia law."
+        "answer": "Georgia injury victims may recover medical expenses (past and future), lost wages and lost earning capacity, pain and suffering, property damage, and in catastrophic cases punitive damages where the defendant's conduct shows willful or reckless disregard. In wrongful death claims, surviving family members may recover the full value of the decedent's life under O.C.G.A. § 51-4-2."
       },
       {
-        "question": "Do I need an attorney for my car accident case in Lawrenceville?",
+        "question": "Do I need a lawyer to handle my car accident in Gwinnett County?",
         "level": "h3",
-        "answer": "While not legally required, having Yari Lawson represent you significantly increases your chances of fair compensation. Insurance companies often offer low settlements to unrepresented victims, and Lawson Personal Injury Attorneys has the experience to negotiate aggressively on your behalf and take cases to trial when necessary."
+        "answer": "It is not legally required, but unrepresented claimants typically settle for less. Insurance companies move fast on first offers because they know an unrepresented person does not yet know what their case is worth, what future medical care will cost, or how Georgia's comparative negligence rule will be argued. Yari's prosecutorial background means she anticipates defense moves before the carrier makes them."
       },
       {
         "question": "What should I do immediately after an accident in Georgia?",
         "level": "h3",
-        "answer": "Seek medical attention immediately, document the scene with photos, collect witness information, and report the accident to police. Then contact Yari Lawson at Lawson Personal Injury Attorneys before speaking with insurance adjusters to ensure your rights are protected from the very beginning."
+        "answer": "Get medical attention even if you feel \"mostly okay,\" call the police and get a report number, photograph the scene and the vehicles, collect contact information from any witnesses, and avoid recorded statements with the other driver's insurance company until you have spoken with a lawyer. If you can, contact Lawson Personal Injury Attorneys before the adjuster from the at-fault carrier reaches you."
       }
     ]
   }
 ];
 
 export const content = {
-  "heroTitle": "Lawrenceville Catastrophic Injury Law w. Yari Lawson",
-  "heroDescription": "Join Yari Lawson, founding attorney of Lawson Personal Injury Attorneys, for in-depth conversations about personal injury law in Lawrenceville and Gwinnett County, Georgia. Each episode delivers practical legal guidance, real-world case insights, and expert advice to help injury victims understand their rights and navigate the path to justice and fair compensation.",
-  "articleTitle": "Your Guide to Personal Injury Law in Lawrenceville, Georgia",
+  "heroTitle": "Lawrenceville Car Accident Law w. Yari Lawson",
+  "heroDescription": "A weekly conversation with Yari Lawson, Principal Trial Attorney and former prosecutor, about how serious injury cases actually move through the Georgia courts. Episodes are recorded in Lawrenceville and built for people in Gwinnett County and the broader metro Atlanta area who have just been hurt and need to understand what happens next.",
+  "articleTitle": "Plain-Language Injury Education for Gwinnett County and Metro Atlanta",
   "articleParagraphs": [
-    "Lawrenceville Catastrophic Injury Law brings together legal expertise and community focus to serve injury victims throughout Gwinnett County. Yari Lawson created this podcast to bridge the gap between complex legal concepts and the real-world concerns of people who have been hurt through no fault of their own. Whether you've been injured in a car accident on Highway 316, a truck collision on I-85, or a slip and fall at a local business, this podcast provides the knowledge you need to protect your rights and make informed decisions about your case.",
-    "Each episode explores different aspects of personal injury law, from understanding Georgia's statute of limitations to recognizing the full extent of damages you may be entitled to recover. Yari Lawson draws on years of experience representing Lawrenceville residents to offer practical advice that goes beyond generic legal information. These conversations address the specific challenges faced by injury victims in our community, including dealing with local insurance companies, understanding Gwinnett County court procedures, and accessing medical care in the greater Atlanta area."
+    "Most legal content in metro Atlanta either reads like a textbook or sounds like a sales pitch. This show fills the gap. Each episode takes one specific Georgia situation, a wreck on I-85, a slip and fall at a big box store, a dog bite in a Lawrenceville neighborhood, and walks through what the injured person actually needs to know. Not five tips. Not vague theory. The real thing.",
+    "Yari Lawson's prosecutorial background is what makes this show different from every other PI podcast in the Atlanta market. She has spent her career studying how cases are attacked from every angle, and she explains those attacks in advance so listeners can protect themselves before the defense ever takes a shot. The firm serves a multilingual client base, and the show treats Spanish-speaking listeners with the same depth as English-speakers."
   ],
-  "featuredQuote": "Knowledge is power when it comes to personal injury claims. Understanding your rights is the first step toward getting the justice and compensation you deserve after a serious accident.",
+  "featuredQuote": "Serious injuries demand relentless lawyers. We don't flinch.",
   "additionalParagraphs": []
 };
 
@@ -191,15 +221,15 @@ export const testimonials = [
 ];
 
 export const stats = {
-  "rating": 4.9,
-  "reviewCount": 200,
-  "satisfactionRate": 99,
-  "satisfactionLabel": "Client Success Rate",
-  "satisfactionVerbalization": "Yari Lawson and Lawson Personal Injury Attorneys maintain a 99% client satisfaction rate, reflecting their commitment to personalized service and aggressive advocacy for injury victims throughout Lawrenceville and Georgia.",
-  "casesHandled": 100,
-  "casesLabel": "$100M+ Recovered",
-  "casesVerbalization": "Lawson Personal Injury Attorneys has successfully recovered over $100 million for clients injured in car accidents, truck collisions, and other catastrophic injury cases throughout Georgia.",
-  "ratingVerbalization": "With a 4.9-star rating from over 200 client reviews, Yari Lawson has established Lawson Personal Injury Attorneys as one of the most trusted personal injury law firms in Lawrenceville."
+  "rating": 0,
+  "reviewCount": 0,
+  "satisfactionRate": 0,
+  "satisfactionLabel": "",
+  "satisfactionVerbalization": "TODO: Populate from verified third-party review platform data (Google Business Profile, Avvo) before launch. Per the Georgia Rules of Professional Conduct, numeric claims about client satisfaction require substantiation.",
+  "casesHandled": 20,
+  "casesLabel": "20+ Years of Trial Experience",
+  "casesVerbalization": "Yari Lawson brings more than 20 years of Georgia trial experience and a former-prosecutor's perspective on how the defense will attack every case. Past results do not guarantee similar outcomes.",
+  "ratingVerbalization": "TODO: Populate rating and review count from Lawson Personal Injury Attorneys' verified Google Business Profile. Per Georgia RPC 7.1, star-rating claims require citation to the verifiable source."
 };
 
 export const navigation = {
@@ -224,7 +254,7 @@ export const navigation = {
 
 export const footer = {
   "logo": "Lawson Personal Injury Attorneys",
-  "description": "Lawrenceville Catastrophic Injury Law is your trusted resource for understanding personal injury law in Gwinnett County, Georgia. Hosted by attorney Yari Lawson, each episode provides valuable insights, legal guidance, and practical advice for injury victims seeking justice and fair compensation.",
+  "description": "Lawrenceville Car Accident Law w. Yari Lawson is the firm's owned-funnel podcast. Yari is the Principal Trial Attorney at Lawson Personal Injury Attorneys, a former prosecutor with 20+ years of courtroom experience serving Lawrenceville, Gwinnett County, and the broader metro Atlanta area. Serious injuries demand relentless lawyers.",
   "copyright": "Lawson Personal Injury Attorneys",
   "socialLinks": {
     "twitter": "#",
@@ -237,50 +267,42 @@ export const footer = {
 
 export const awards = [
   {
-    "name": "Super Lawyers Rising Star",
-    "description": "Recognized for outstanding legal achievement and professional excellence in personal injury law"
+    "name": "Principal Trial Attorney",
+    "description": "Yari Lawson founded Lawson Personal Injury Attorneys to bring trial-tested representation to injury victims in Gwinnett County and metro Atlanta."
   },
   {
-    "name": "Avvo Clients' Choice Award",
-    "description": "Honored for exceptional client service and top ratings from injury victims in Georgia"
+    "name": "Former Prosecutor",
+    "description": "Yari spent years as a prosecutor before founding the firm, an experience that informs how she anticipates defense strategy in every injury matter."
   },
   {
-    "name": "National Trial Lawyers Top 40 Under 40",
-    "description": "Selected as one of the nation's top trial attorneys under 40 for personal injury litigation"
-  },
-  {
-    "name": "Georgia Trial Lawyers Association Member",
-    "description": "Active member committed to protecting the rights of injury victims throughout Georgia"
-  },
-  {
-    "name": "Million Dollar Advocates Forum",
-    "description": "Exclusive recognition for attorneys who have won million-dollar verdicts and settlements for clients"
+    "name": "20+ Years of Trial Experience",
+    "description": "Two decades of courtroom work spanning both sides of the aisle, with a focus on serious injury and wrongful death cases under Georgia law."
   }
 ];
 
 export const about = {
-  "title": "About Yari Lawson and Lawrenceville Catastrophic Injury Law",
-  "description": "Yari Lawson created Lawrenceville Catastrophic Injury Law to educate the community about personal injury rights and empower accident victims with the knowledge they need to navigate the legal system. As the founder of Lawson Personal Injury Attorneys, Yari Lawson has dedicated a career to fighting for injury victims throughout Georgia, securing millions in compensation for clients facing devastating accidents. This podcast brings that same commitment to justice directly to listeners, offering practical legal insights, real case discussions, and answers to the questions that matter most to those dealing with serious injuries in Lawrenceville and beyond.",
+  "title": "About Yari Lawson and Lawrenceville Car Accident Law",
+  "description": "Yari Lawson is the Principal Trial Attorney and founder of Lawson Personal Injury Attorneys, a Lawrenceville-based firm representing injury and wrongful death clients across Gwinnett County and metro Atlanta. With 20+ years of trial experience and a former-prosecutor's perspective on how the other side attacks cases, Yari created this podcast to give plain-language injury education to the people who need it most, the scared, in-pain, 11pm-on-the-couch listener trying to figure out whether they even have a case. The firm serves a multilingual client base and treats Spanish-speaking listeners with the same depth as English-speakers.",
   "highlights": [
-    "Expert legal analysis of Georgia personal injury law from an experienced trial attorney",
-    "Real-world case examples and strategies for maximizing compensation after accidents",
-    "Practical guidance on dealing with insurance companies and protecting your rights",
-    "Coverage of car accidents, truck collisions, slip and falls, and wrongful death cases",
-    "Insights specific to Lawrenceville and Georgia legal procedures and timelines",
-    "Direct answers to common questions from injury victims and their families"
+    "Hosted by a former prosecutor with 20+ years of trial experience in Georgia",
+    "Single-topic episodes covering car, truck, motorcycle, and pedestrian accidents in Gwinnett County",
+    "Plain-language explanations of Georgia comparative negligence, statute of limitations, and damages",
+    "Practical first steps for anyone injured in metro Atlanta: what to say, what to document, who to call",
+    "Strategic preview of how the defense and insurance companies will attack a case",
+    "Bilingual-accessible content for the firm's Spanish-speaking client base in metro Atlanta"
   ],
   "showReadMore": false
 };
 
 export const subscribeCTA = {
   "title": "Never Miss an Episode",
-  "description": "Subscribe to Lawrenceville Catastrophic Injury Law with Yari Lawson to stay informed about your legal rights and get expert insights on personal injury cases in Georgia. Each episode delivers valuable information that could make a significant difference in your case outcome, whether you have been injured in a car accident, truck collision, or any other catastrophic injury incident in the Lawrenceville area.",
+  "description": "Subscribe to Lawrenceville Car Accident Law w. Yari Lawson to get a working knowledge of how Georgia personal injury cases actually move from incident to resolution. Each episode is a single deep topic, recorded in Lawrenceville, hosted by a Principal Trial Attorney who has spent 20+ years inside Georgia courtrooms.",
   "highlights": [
-    "Get notified when new episodes covering the latest personal injury topics are released",
-    "Learn strategies insurance companies use and how to protect yourself from lowball settlements",
-    "Understand your legal rights under Georgia law and the compensation you deserve",
-    "Hear real case examples and outcomes from Yari Lawson's extensive trial experience",
-    "Access expert legal guidance from one of Lawrenceville's most trusted personal injury attorneys"
+    "Get notified when new weekly episodes drop",
+    "Hear how the defense and insurance companies build attacks before they happen",
+    "Understand your rights under Georgia law and the Gwinnett County process",
+    "Practical first steps you can take this week if you have just been injured",
+    "Direct line to the firm at (678) 446-3655 for a free consultation"
   ]
 };
 
@@ -288,9 +310,9 @@ export const episodes = [
   {
     "id": 1,
     "number": 1,
-    "title": "Understanding Your Rights After a Car Accident in Lawrenceville",
-    "subtitle": "Episode 1 \u2022 Lawson Personal Injury Attorneys",
-    "description": "Yari Lawson breaks down the essential steps every accident victim should take immediately after a car crash in Lawrenceville, Georgia. This inaugural episode covers how to document the scene, what to say to insurance adjusters, and the critical mistakes that can jeopardize your personal injury claim before you even hire an attorney.",
+    "title": "What to Do After a Car Accident in Lawrenceville, Georgia",
+    "subtitle": "Episode 1 • Lawson Personal Injury Attorneys",
+    "description": "Yari Lawson breaks down the practical first steps every injured driver should take after a wreck in Gwinnett County, from documenting the scene on I-85 to handling the call you are about to get from the at-fault driver's insurance carrier. She also explains the early mistakes that quietly tank otherwise strong cases.",
     "duration": "28 min",
     "date": "January 15, 2025",
     "category": "Car Accidents",
@@ -298,42 +320,42 @@ export const episodes = [
     "topic": "Car Accident Rights",
     "concepts": [
       "Georgia statute of limitations",
-      "Insurance claim process",
-      "Evidence documentation",
-      "Medical treatment importance"
+      "Recorded statements and adjusters",
+      "Comparative negligence",
+      "Medical documentation"
     ],
     "chapters": [
-      "Introduction to Personal Injury Law in Georgia",
-      "What to Do at the Accident Scene",
-      "Dealing with Insurance Companies",
-      "When to Contact an Attorney",
-      "Common Mistakes That Hurt Your Case"
+      "First moves at the scene of a Gwinnett County crash",
+      "What to say (and not say) to the adjuster",
+      "How Georgia's comparative negligence rule cuts your recovery",
+      "When to call a lawyer and what to expect",
+      "Common early mistakes that tank an injury case"
     ],
     "logo": "/images/logo.svg"
   },
   {
     "id": 2,
     "number": 2,
-    "title": "Truck Accident Cases: Why They're Different and More Complex",
-    "subtitle": "Episode 2 \u2022 Lawson Personal Injury Attorneys",
-    "description": "In this episode, Yari Lawson explains why truck accident cases require specialized legal knowledge and how federal regulations impact your claim. Learn about the multiple parties that may be liable, the evidence that must be preserved quickly, and why trucking companies have teams of lawyers ready to minimize their responsibility.",
+    "title": "Truck Accidents on I-85 and I-285: Why They Are Different",
+    "subtitle": "Episode 2 • Lawson Personal Injury Attorneys",
+    "description": "Truck accident cases involve federal regulations, multiple liable parties, and time-sensitive evidence that disappears within days. Yari explains how the firm preserves black box and ELD data, identifies every defendant from driver to broker, and counters the trucking-defense playbook from the moment a wreck happens on a Georgia interstate.",
     "duration": "32 min",
     "date": "January 22, 2025",
     "category": "Truck Accidents",
     "featured": false,
     "topic": "Commercial Vehicle Accidents",
     "concepts": [
-      "Federal trucking regulations",
-      "Multiple liable parties",
-      "Black box data",
-      "Catastrophic injury compensation"
+      "FMCSA regulations",
+      "Multiple defendants",
+      "Black box and ELD evidence",
+      "Catastrophic injury damages"
     ],
     "chapters": [
-      "The Scope of Truck Accidents in Georgia",
-      "Federal Motor Carrier Safety Regulations",
-      "Identifying All Liable Parties",
-      "Preserving Critical Evidence",
-      "Maximizing Compensation in Truck Cases"
+      "Why truck cases are different from car cases under Georgia law",
+      "Federal Motor Carrier Safety Regulations and how they create liability",
+      "Identifying every defendant: driver, carrier, broker, shipper",
+      "Preserving electronic logging data and black box evidence",
+      "Building damages in a catastrophic injury or wrongful death claim"
     ],
     "logo": "/images/logo.svg"
   }
@@ -342,38 +364,38 @@ export const episodes = [
 export const podcastTeam = [
   {
     "name": "Yari Lawson",
-    "role": "Host & Lead Attorney",
+    "role": "Host & Principal Trial Attorney",
     "photo": "/images/team-member.jpg",
     "slug": "yari-lawson",
-    "bio": "Yari Lawson is the founder of Lawson Personal Injury Attorneys and a dedicated advocate for injury victims throughout Georgia. With extensive trial experience and millions recovered for clients, Yari Lawson brings real-world legal expertise to every episode of Lawrenceville Catastrophic Injury Law.",
+    "bio": "Yari Lawson is the founder of Lawson Personal Injury Attorneys and a former prosecutor with 20+ years of trial experience. She hosts every episode and grounds each conversation in real Lawrenceville, Gwinnett County, and metro Atlanta cases.",
     "episodes": "Host of all episodes"
   }
 ];
 
 export const topicalEntryGrid = {
-  "title": "Explore Personal Injury Topics",
+  "title": "Explore Georgia Personal Injury Topics",
   "tabs": [
     {
       "label": "Car Accidents",
       "links": [
         {
-          "title": "Rear-End Collision Claims",
-          "description": "Learn how Yari Lawson proves fault and maximizes compensation in rear-end accident cases, the most common type of collision in Lawrenceville.",
+          "title": "Rear-End Collision Claims in Georgia",
+          "description": "How fault is proved in a rear-end crash on I-85 or surface streets in Lawrenceville, and why the at-fault carrier still tries to argue comparative negligence.",
           "href": "#rear-end-collisions"
         },
         {
           "title": "Intersection Accidents",
-          "description": "Understand liability issues in intersection crashes and how traffic laws in Georgia determine fault in these complex cases.",
+          "description": "Liability in Gwinnett County intersection crashes, how Georgia traffic statutes assign fault, and what the police report does and does not prove.",
           "href": "#intersection-accidents"
         },
         {
           "title": "Hit and Run Cases",
-          "description": "Discover your options for compensation when the at-fault driver flees the scene and how uninsured motorist coverage applies.",
+          "description": "Recovery options when the at-fault driver flees, including how Georgia uninsured motorist coverage applies and what to document immediately.",
           "href": "#hit-and-run"
         },
         {
           "title": "Distracted Driving Accidents",
-          "description": "Explore how cell phone use and other distractions create liability and the evidence needed to prove negligence in these cases.",
+          "description": "How phone records, dash cam, and Georgia's hands-free law combine to prove negligence in metro Atlanta distracted-driving crashes.",
           "href": "#distracted-driving"
         }
       ]
@@ -382,23 +404,23 @@ export const topicalEntryGrid = {
       "label": "Truck Accidents",
       "links": [
         {
-          "title": "Commercial Truck Regulations",
-          "description": "Learn how federal and state trucking regulations impact liability and what violations commonly lead to catastrophic accidents.",
+          "title": "Federal Trucking Regulations",
+          "description": "How FMCSA hours-of-service, maintenance, and driver-qualification rules create liability against the trucking company, not just the driver.",
           "href": "#truck-regulations"
         },
         {
           "title": "Trucking Company Liability",
-          "description": "Understand when trucking companies can be held responsible for driver negligence and improper maintenance or training.",
+          "description": "When the carrier, broker, or shipper can be on the hook in Georgia for negligent hiring, training, supervision, or maintenance.",
           "href": "#trucking-company-liability"
         },
         {
-          "title": "Black Box Evidence",
-          "description": "Discover how electronic logging devices and black box data prove crucial facts about speed, braking, and driver behavior.",
+          "title": "Black Box and ELD Evidence",
+          "description": "How to preserve electronic logging device data, ECM downloads, and dashcam footage before the trucking-defense team destroys or overwrites it.",
           "href": "#black-box-evidence"
         },
         {
-          "title": "Jackknife and Rollover Accidents",
-          "description": "Explore the causes of these severe truck accidents and the catastrophic injuries that often result from loss of control.",
+          "title": "Jackknife and Rollover Crashes",
+          "description": "Catastrophic-injury cases on I-85 and I-285, why these wrecks usually involve catastrophic injury or wrongful death damages.",
           "href": "#jackknife-rollover"
         }
       ]
@@ -407,23 +429,23 @@ export const topicalEntryGrid = {
       "label": "Motorcycle Accidents",
       "links": [
         {
-          "title": "Motorcycle Bias in Claims",
-          "description": "Learn how Yari Lawson combats unfair stereotypes that insurance companies use to devalue motorcycle accident claims.",
+          "title": "Motorcycle Bias in Georgia Claims",
+          "description": "How insurance carriers use rider stereotypes to discount motorcycle claims and how Lawson Personal Injury Attorneys counters them.",
           "href": "#motorcycle-bias"
         },
         {
           "title": "Lane Splitting and Georgia Law",
-          "description": "Understand how Georgia's prohibition on lane splitting affects liability and what riders need to know about their rights.",
+          "description": "Georgia prohibits lane splitting; how that statute affects liability when a passenger vehicle changes lanes into a rider.",
           "href": "#lane-splitting"
         },
         {
-          "title": "Road Hazard Accidents",
-          "description": "Discover when government entities or property owners can be held liable for dangerous road conditions that cause motorcycle crashes.",
+          "title": "Road Hazard and Premises Cases",
+          "description": "When government entities or property owners can be held liable for dangerous road conditions that bring a motorcycle down.",
           "href": "#road-hazards"
         },
         {
-          "title": "Protective Gear and Damages",
-          "description": "Explore how helmet use and protective equipment impact both safety and the legal arguments in motorcycle injury cases.",
+          "title": "Helmets, Gear, and Damages",
+          "description": "How protective equipment use influences both the injury picture and the legal arguments insurers raise about comparative fault.",
           "href": "#protective-gear"
         }
       ]
@@ -433,22 +455,22 @@ export const topicalEntryGrid = {
       "links": [
         {
           "title": "Slip and Fall on Commercial Property",
-          "description": "Learn what business owners in Lawrenceville must do to maintain safe premises and when they can be held liable for injuries.",
+          "description": "What Lawrenceville business owners must do to maintain safe premises and when they are liable for an invitee's injury under O.C.G.A. § 51-3-1.",
           "href": "#commercial-slip-fall"
         },
         {
-          "title": "Inadequate Security Cases",
-          "description": "Understand when property owners are responsible for criminal attacks due to negligent security measures and poor lighting.",
+          "title": "Inadequate Security and Negligent Security",
+          "description": "When a property owner is responsible for criminal attacks because of poor lighting, unrepaired access controls, or ignored prior incidents.",
           "href": "#inadequate-security"
         },
         {
           "title": "Dog Bite Liability in Georgia",
-          "description": "Discover Georgia's dog bite laws and when owners are strictly liable versus when negligence must be proven.",
+          "description": "Georgia's dog bite statute (O.C.G.A. § 51-2-7), the \"first bite\" rule, and the evidence Lawson Personal Injury Attorneys gathers to prove the owner knew.",
           "href": "#dog-bite-liability"
         },
         {
-          "title": "Swimming Pool Accidents",
-          "description": "Explore premises liability for drowning and near-drowning incidents involving inadequate fencing or supervision.",
+          "title": "Swimming Pool and Drowning Cases",
+          "description": "Premises liability for drownings and near-drownings tied to inadequate fencing, supervision, or warning signage.",
           "href": "#swimming-pool-accidents"
         }
       ]
@@ -458,22 +480,22 @@ export const topicalEntryGrid = {
       "links": [
         {
           "title": "Who Can File a Wrongful Death Claim",
-          "description": "Learn about Georgia's specific rules regarding which family members have the legal right to pursue wrongful death compensation.",
+          "description": "Georgia's wrongful death statute, the order of standing among surviving spouses, children, and parents, and how the estate's separate claim works.",
           "href": "#wrongful-death-standing"
         },
         {
-          "title": "Damages in Wrongful Death Cases",
-          "description": "Understand the full value of life including economic losses, loss of companionship, and funeral expenses under Georgia law.",
+          "title": "Damages: The Full Value of the Life",
+          "description": "How Georgia juries are instructed to value the decedent's life, including economic and non-economic components.",
           "href": "#wrongful-death-damages"
         },
         {
           "title": "Fatal Accident Investigations",
-          "description": "Discover how Yari Lawson works with experts to reconstruct fatal accidents and prove negligence in wrongful death cases.",
+          "description": "How the firm works with reconstruction experts and medical examiners to prove fault in fatal car, truck, and motorcycle crashes.",
           "href": "#fatal-investigations"
         },
         {
           "title": "Wrongful Death Time Limits",
-          "description": "Explore the statute of limitations for wrongful death claims in Georgia and why prompt legal action is critical.",
+          "description": "The Georgia statute of limitations for wrongful death and why early action protects evidence and witness memory.",
           "href": "#wrongful-death-timeline"
         }
       ]
@@ -484,44 +506,44 @@ export const topicalEntryGrid = {
 export const trustBadges = [
   {
     "id": 1,
-    "title": "Super Lawyers Rising Star",
-    "tooltip": "Yari Lawson has been recognized as a Super Lawyers Rising Star, an honor reserved for outstanding attorneys who have achieved a high degree of peer recognition and professional achievement in personal injury law. Only 2.5% of attorneys in each state receive this distinction.",
+    "title": "20+ Years Trial Experience",
+    "tooltip": "Yari Lawson, founder of Lawson Personal Injury Attorneys, has spent more than 20 years in Georgia courtrooms, including time as a prosecutor, before building the firm's plaintiff-side personal injury practice in Lawrenceville.",
     "badge": "/badges/placeholder.avif",
-    "href": "#super-lawyers"
+    "href": "#trial-experience"
   },
   {
     "id": 2,
-    "title": "Avvo Clients' Choice",
-    "tooltip": "Lawson Personal Injury Attorneys has earned the Avvo Clients' Choice Award based on exceptional client reviews and ratings. This badge reflects the firm's commitment to client satisfaction and the outstanding results Yari Lawson achieves for injury victims in Lawrenceville.",
+    "title": "Former Prosecutor",
+    "tooltip": "Yari's prosecutorial background informs how the firm anticipates and counters defense strategy in serious-injury and wrongful-death cases throughout Gwinnett County and metro Atlanta.",
     "badge": "/badges/placeholder.avif",
-    "href": "#avvo-choice"
+    "href": "#former-prosecutor"
   },
   {
     "id": 3,
-    "title": "Million Dollar Advocates Forum",
-    "tooltip": "Yari Lawson is a member of the Million Dollar Advocates Forum, one of the most prestigious groups of trial lawyers in the United States. Membership is limited to attorneys who have won million-dollar verdicts and settlements, representing less than 1% of all lawyers.",
+    "title": "Lawrenceville-Based",
+    "tooltip": "The firm's office at 320 South Perry Street in Lawrenceville is the anchor for clients across Gwinnett County and the broader metro Atlanta area.",
     "badge": "/badges/placeholder.avif",
-    "href": "#million-dollar-advocates"
+    "href": "#location"
   },
   {
     "id": 4,
-    "title": "Georgia Trial Lawyers Association",
-    "tooltip": "As an active member of the Georgia Trial Lawyers Association, Yari Lawson is committed to protecting the rights of injury victims and ensuring access to justice throughout Georgia. This membership demonstrates dedication to continuing legal education and advocacy.",
+    "title": "Bilingual Client Service",
+    "tooltip": "Lawson Personal Injury Attorneys serves a multilingual client base in metro Atlanta and supports Spanish-speaking clients throughout the case.",
     "badge": "/badges/placeholder.avif",
-    "href": "#gtla-member"
+    "href": "#bilingual"
   },
   {
     "id": 5,
-    "title": "Top 40 Under 40",
-    "tooltip": "Yari Lawson has been selected by the National Trial Lawyers as one of the Top 40 Under 40 trial attorneys in the nation. This exclusive honor recognizes exceptional litigation skills, trial results, and leadership among young attorneys practicing personal injury law.",
+    "title": "Owned-Funnel Authority",
+    "tooltip": "Yari built the firm on owned authority rather than billboards or rented leads. The podcast is part of that philosophy: education that earns trust without gatekeeping it behind a free consultation.",
     "badge": "/badges/placeholder.avif",
-    "href": "#top-40-under-40"
+    "href": "#owned-authority"
   }
 ];
 
-export const chaptersDescription = "This episode covers essential topics including immediate post-accident actions, Georgia negligence laws, insurance negotiations, claim valuation, and litigation considerations."
+export const chaptersDescription = "This first-episode breakdown covers the practical sequence: scene documentation, the adjuster call, Georgia's comparative negligence rule, defense strategy, and how cases either settle in negotiation or move to trial."
 
-export const reviewsInstruction = "Client testimonials are collected from verified Google reviews and represent actual experiences of individuals who have worked with Yari Lawson and Lawson Personal Injury Attorneys on personal injury cases in Lawrenceville and throughout Georgia."
+export const reviewsInstruction = "Client testimonials reflect actual experiences of clients of Lawson Personal Injury Attorneys. Past results do not guarantee similar outcomes; every case is unique. The firm complies with Georgia Rules of Professional Conduct on attorney advertising."
 
 export const episodeTopics = [
   "All",
@@ -563,10 +585,10 @@ export const formConfig = {
   ],
   heading: "Get in touch now!",
   submitText: "Send Message",
-  successMessage: "Thank you! Your message has been sent. We'll get back to you within 4 hours during business days.",
-  errorMessage: "Something went wrong. Please call us directly at (770) 555-0123.",
+  successMessage: "Thank you for reaching out. The Lawson Personal Injury Attorneys team will be in touch within one business day.",
+  errorMessage: "Something went wrong. Please call us directly at (678) 446-3655.",
   source: "podcast-website",
-  campaign: "the-you-interview",
+  campaign: "lawrenceville-car-accident-law",
 }
 
 export const authorProfiles: Record<string, {
@@ -589,20 +611,35 @@ export const authorProfiles: Record<string, {
   "yari-lawson": {
     name: "Yari Lawson",
     slug: "yari-lawson",
-    title: "Founding Attorney & Host",
-    role: "Host & Lead Attorney",
+    title: "Principal Trial Attorney & Founder",
+    role: "Host & Principal Trial Attorney",
     photo: "/images/attorney.jpg",
     barNumber: "",
     barUrl: "",
     education: [],
-    admissions: [],
+    admissions: [
+      { jurisdiction: "Georgia", year: "" }
+    ],
     awards: [],
-    practiceAreas: [],
+    practiceAreas: [
+      "Car Accidents",
+      "Truck Accidents",
+      "Motorcycle Accidents",
+      "Wrongful Death",
+      "Traumatic Brain Injuries",
+      "Catastrophic Injuries",
+      "Slip and Fall",
+      "Dog Bites",
+      "Pedestrian Accidents",
+      "Uber and Lyft Accidents",
+      "Premises Liability",
+      "Product Liability"
+    ],
     bio: [
-      "Yari Lawson is the founding attorney of Lawson Personal Injury Attorneys, a dedicated personal injury law firm serving Lawrenceville, Georgia and the surrounding Gwinnett County communities. With extensive experience representing victims of catastrophic injuries, Yari Lawson has built a reputation for aggressive advocacy and compassionate client service. Yari Lawson understands that serious accidents involving cars, trucks, motorcycles, and pedestrians can devastate families financially, physically, and emotionally, which is why Yari Lawson fights tirelessly to secure maximum compensation for every client.",
-      "Throughout a distinguished legal career, Yari Lawson has successfully handled complex personal injury cases ranging from traumatic brain injuries and wrongful death claims to slip and fall accidents and dog bite incidents. Yari Lawson's approach combines thorough investigation, expert collaboration, and strategic negotiation to build compelling cases that insurance companies cannot ignore. When settlement negotiations fail to produce fair results, Yari Lawson is fully prepared to take cases to trial to protect clients' rights.",
-      "Beyond the courtroom, Yari Lawson is committed to educating the Lawrenceville community about personal injury law through this podcast and various community outreach initiatives. Yari Lawson believes that informed citizens are empowered citizens, and that understanding your legal rights is the first step toward justice after an injury. When not advocating for clients, Yari Lawson enjoys giving back to the Gwinnett County community and staying connected with the people who make Lawrenceville a special place to live and work."
-],
+      "Yari Lawson is the Principal Trial Attorney and founder of Lawson Personal Injury Attorneys in Lawrenceville, Georgia. With 20+ years of trial experience and a background as a former prosecutor, Yari has spent her career studying how the other side builds and attacks injury cases. That perspective shapes how the firm represents clients in Gwinnett County and the broader metro Atlanta area: every case is built the way a prosecutor builds a case, knowing exactly how the defense and the insurance company will come at it.",
+      "Lawson Personal Injury Attorneys handles serious injury and wrongful death matters across Georgia, including car accidents, truck accidents, motorcycle crashes, traumatic brain injuries, catastrophic injuries, slip and fall cases, dog bites, pedestrian and rideshare incidents, premises liability, and product liability. The firm's brand line, \"Serious Injuries Demand Relentless Lawyers. We Don't Flinch,\" reflects how Yari approaches insurance carriers, trucking companies, and defense firms on behalf of clients.",
+      "Yari created this podcast as part of an owned-funnel approach to client communication. Rather than buying billboards or rented leads, she puts plain-language injury education in front of the people who need it most, scared, in pain, and trying to figure out whether they have a case at 11pm from their couch. Episodes treat Spanish-speaking listeners with the same depth and respect as English-speakers, reflecting the multilingual client base the firm serves in metro Atlanta."
+    ],
     memberships: [],
     socialLinks: [],
     episodeAppearances: "Host of all episodes",
