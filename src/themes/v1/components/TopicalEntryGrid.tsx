@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
 import { ChevronRight } from 'lucide-react'
 import { topicalEntryGrid } from '@/data/siteData'
@@ -43,8 +44,23 @@ const TopicalEntryGrid = () => {
           {topicalEntryGrid.tabs[activeTab].links.map((link, index) => {
             const isExternal = /^https?:\/\//.test(link.href)
             const cardClass = "bg-white rounded-2xl overflow-hidden hover:shadow-xl transition-all group p-6 md:p-8 flex flex-col justify-center"
+            const linkImage = (link as { image?: string }).image
             const inner = (
               <>
+                {linkImage && (
+                  <div
+                    className="w-14 h-14 md:w-16 md:h-16 rounded-xl flex items-center justify-center mb-4"
+                    style={{ backgroundColor: 'rgba(40, 49, 66, 0.08)' }}
+                  >
+                    <Image
+                      src={linkImage}
+                      alt=""
+                      width={40}
+                      height={40}
+                      className="w-9 h-9 md:w-10 md:h-10"
+                    />
+                  </div>
+                )}
                 <h3 className="text-xl md:text-2xl font-bold text-black mb-3">{link.title}</h3>
                 <p className="text-sm md:text-base text-gray-600 leading-relaxed mb-4">{link.description}</p>
                 <div className="flex items-center text-black font-semibold group-hover:text-secondary transition-colors">
