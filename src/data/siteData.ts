@@ -1,11 +1,9 @@
 /**
- * Site Data — Lawson Personal Injury Attorneys
+ * Site Data, Lawson Personal Injury Attorneys
  * Sourced from the firm's Podcast Show Bible (zip_195524) on 2026-04-30.
  * Fields flagged "NEEDS CONFIRMATION" in the Bible are left at neutral defaults
  * rather than fabricated.
- */
-
-export const siteConfig = {
+ */export const siteConfig = {
   "podcastName": "Lawrenceville Car Accident Law w. Yari Lawson",
   "tagline": "We Don't Flinch",
   "podcastUrl": "https://podcast-lawrencevillecaraccidentlawyer.vercel.app",
@@ -16,7 +14,8 @@ export const siteConfig = {
   "formCTA": {
     "text": "Free Consultation",
     "href": "#form"
-  }
+  },
+  "firmUrl": "https://www.lawsonfirm.com/en"
 };
 
 export const episode = {
@@ -24,7 +23,8 @@ export const episode = {
   "title": "What to Do After a Car Accident in Lawrenceville, Georgia",
   "date": "01.15.24",
   "duration": "00:45:30",
-  "description": "Yari Lawson, founder of Lawson Personal Injury Attorneys and a former prosecutor with 20+ years of trial experience, walks through the practical first steps for anyone injured in a car wreck on I-85, I-285, or anywhere in Gwinnett County. She breaks down what to say to the insurance adjuster who calls the next day, how Georgia's comparative negligence rule changes the calculus, and the documentation mistakes that quietly cost people thousands."
+  "description": "Yari Lawson, founder of Lawson Personal Injury Attorneys and a former prosecutor with 20+ years of trial experience, walks through the practical first steps for anyone injured in a car wreck on I-85, I-285, or anywhere in Gwinnett County. She breaks down what to say to the insurance adjuster who calls the next day, how Georgia's comparative negligence rule changes the calculus, and the documentation mistakes that quietly cost people thousands.",
+  "youtubeUrl": ""
 };
 
 export const attorney = {
@@ -136,12 +136,12 @@ export const faqGroups = [
       {
         "question": "How long do I have to file a personal injury claim in Georgia?",
         "level": "h2",
-        "answer": "Georgia's statute of limitations for most personal injury cases is two years from the date of the injury (O.C.G.A. § 9-3-33). Shorter deadlines apply to claims against government entities and longer deadlines apply to certain wrongful death scenarios. Because evidence and witness memory degrade quickly, the firm recommends speaking with an attorney as soon as you are medically able rather than waiting near the deadline."
+        "answer": "Georgia's statute of limitations for most personal injury cases is two years from the date of the injury (O.C.G.A. Â§ 9-3-33). Shorter deadlines apply to claims against government entities and longer deadlines apply to certain wrongful death scenarios. Because evidence and witness memory degrade quickly, the firm recommends speaking with an attorney as soon as you are medically able rather than waiting near the deadline."
       },
       {
         "question": "What can I recover in a Lawrenceville personal injury case?",
         "level": "h2",
-        "answer": "Georgia injury victims may recover medical expenses (past and future), lost wages and lost earning capacity, pain and suffering, property damage, and in catastrophic cases punitive damages where the defendant's conduct shows willful or reckless disregard. In wrongful death claims, surviving family members may recover the full value of the decedent's life under O.C.G.A. § 51-4-2."
+        "answer": "Georgia injury victims may recover medical expenses (past and future), lost wages and lost earning capacity, pain and suffering, property damage, and in catastrophic cases punitive damages where the defendant's conduct shows willful or reckless disregard. In wrongful death claims, surviving family members may recover the full value of the decedent's life under O.C.G.A. Â§ 51-4-2."
       },
       {
         "question": "Do I need a lawyer to handle my car accident in Gwinnett County?",
@@ -225,11 +225,11 @@ export const stats = {
   "reviewCount": 0,
   "satisfactionRate": 0,
   "satisfactionLabel": "",
-  "satisfactionVerbalization": "TODO: Populate from verified third-party review platform data (Google Business Profile, Avvo) before launch. Per the Georgia Rules of Professional Conduct, numeric claims about client satisfaction require substantiation.",
+  "satisfactionVerbalization": "",
   "casesHandled": 20,
   "casesLabel": "20+ Years of Trial Experience",
   "casesVerbalization": "Yari Lawson brings more than 20 years of Georgia trial experience and a former-prosecutor's perspective on how the defense will attack every case. Past results do not guarantee similar outcomes.",
-  "ratingVerbalization": "TODO: Populate rating and review count from Lawson Personal Injury Attorneys' verified Google Business Profile. Per Georgia RPC 7.1, star-rating claims require citation to the verifiable source."
+  "ratingVerbalization": "' verified Google Business Profile. Per Georgia RPC 7.1, star-rating claims require citation to the verifiable source"
 };
 
 export const navigation = {
@@ -249,7 +249,7 @@ export const navigation = {
     }
   ],
   "ctaText": "Subscribe",
-  "ctaHref": "#subscribe"
+  "ctaHref": "#listen"
 };
 
 export const footer = {
@@ -311,7 +311,7 @@ export const episodes = [
     "id": 1,
     "number": 1,
     "title": "What to Do After a Car Accident in Lawrenceville, Georgia",
-    "subtitle": "Episode 1 • Lawson Personal Injury Attorneys",
+    "subtitle": "Episode 1 â€¢ Lawson Personal Injury Attorneys",
     "description": "Yari Lawson breaks down the practical first steps every injured driver should take after a wreck in Gwinnett County, from documenting the scene on I-85 to handling the call you are about to get from the at-fault driver's insurance carrier. She also explains the early mistakes that quietly tank otherwise strong cases.",
     "duration": "28 min",
     "date": "January 15, 2025",
@@ -331,13 +331,14 @@ export const episodes = [
       "When to call a lawyer and what to expect",
       "Common early mistakes that tank an injury case"
     ],
-    "logo": "/images/logo.svg"
+    "logo": "/images/logo.svg",
+    "youtubeUrl": ""
   },
   {
     "id": 2,
     "number": 2,
     "title": "Truck Accidents on I-85 and I-285: Why They Are Different",
-    "subtitle": "Episode 2 • Lawson Personal Injury Attorneys",
+    "subtitle": "Episode 2 â€¢ Lawson Personal Injury Attorneys",
     "description": "Truck accident cases involve federal regulations, multiple liable parties, and time-sensitive evidence that disappears within days. Yari explains how the firm preserves black box and ELD data, identifies every defendant from driver to broker, and counters the trucking-defense playbook from the moment a wreck happens on a Georgia interstate.",
     "duration": "32 min",
     "date": "January 22, 2025",
@@ -357,7 +358,8 @@ export const episodes = [
       "Preserving electronic logging data and black box evidence",
       "Building damages in a catastrophic injury or wrongful death claim"
     ],
-    "logo": "/images/logo.svg"
+    "logo": "/images/logo.svg",
+    "youtubeUrl": ""
   }
 ];
 
@@ -379,24 +381,24 @@ export const topicalEntryGrid = {
       "label": "Car Accidents",
       "links": [
         {
-          "title": "Rear-End Collision Claims in Georgia",
-          "description": "How fault is proved in a rear-end crash on I-85 or surface streets in Lawrenceville, and why the at-fault carrier still tries to argue comparative negligence.",
-          "href": "#rear-end-collisions"
+          "title": "Georgia Car Accident Lawyer",
+          "description": "Lawson Personal Injury Attorneys represents drivers and passengers injured in serious Georgia collisions, from I-85 crashes in Gwinnett County to surface-street wrecks in Lawrenceville.",
+          "href": "https://www.lawsonfirm.com/en/georgia-car-accident-lawyer"
         },
         {
-          "title": "Intersection Accidents",
-          "description": "Liability in Gwinnett County intersection crashes, how Georgia traffic statutes assign fault, and what the police report does and does not prove.",
-          "href": "#intersection-accidents"
+          "title": "Georgia Uber and Rideshare Accidents",
+          "description": "Uber and Lyft collisions layer Georgia transportation rules over standard car-accident liability. Multiple insurance policies often apply to a single Atlanta-area crash.",
+          "href": "https://www.lawsonfirm.com/en/georgia-uber-accident-lawyer"
         },
         {
-          "title": "Hit and Run Cases",
-          "description": "Recovery options when the at-fault driver flees, including how Georgia uninsured motorist coverage applies and what to document immediately.",
-          "href": "#hit-and-run"
+          "title": "Case Results",
+          "description": "Recent verdicts and settlements in Georgia personal injury matters handled by Yari Lawson and the firm. Past results do not guarantee similar outcomes.",
+          "href": "https://www.lawsonfirm.com/en/case-results"
         },
         {
-          "title": "Distracted Driving Accidents",
-          "description": "How phone records, dash cam, and Georgia's hands-free law combine to prove negligence in metro Atlanta distracted-driving crashes.",
-          "href": "#distracted-driving"
+          "title": "Free Consultation",
+          "description": "Reach Lawson Personal Injury Attorneys directly. Free case review, contingency fee, no recovery means no fee.",
+          "href": "https://www.lawsonfirm.com/en#contact-us"
         }
       ]
     },
@@ -404,24 +406,24 @@ export const topicalEntryGrid = {
       "label": "Truck Accidents",
       "links": [
         {
-          "title": "Federal Trucking Regulations",
-          "description": "How FMCSA hours-of-service, maintenance, and driver-qualification rules create liability against the trucking company, not just the driver.",
-          "href": "#truck-regulations"
+          "title": "Georgia Truck Accident Lawyer",
+          "description": "The firm's commercial trucking practice: 18-wheelers, dump trucks, and fleet vehicles operating under Federal Motor Carrier Safety Regulations on Georgia interstates.",
+          "href": "https://www.lawsonfirm.com/en/georgia-truck-accident-lawyer"
         },
         {
-          "title": "Trucking Company Liability",
-          "description": "When the carrier, broker, or shipper can be on the hook in Georgia for negligent hiring, training, supervision, or maintenance.",
-          "href": "#trucking-company-liability"
+          "title": "Catastrophic Injury Lawyer",
+          "description": "Truck crashes on I-85 and I-285 routinely produce catastrophic injuries. The firm builds life-care damages models with qualified experts.",
+          "href": "https://www.lawsonfirm.com/en/catastrophic-injury-lawyer"
         },
         {
-          "title": "Black Box and ELD Evidence",
-          "description": "How to preserve electronic logging device data, ECM downloads, and dashcam footage before the trucking-defense team destroys or overwrites it.",
-          "href": "#black-box-evidence"
+          "title": "Georgia Wrongful Death Lawyer",
+          "description": "Fatal trucking collisions trigger Georgia's wrongful death statute. Yari Lawson represents surviving spouses, children, and parents under O.C.G.A. Â§ 51-4-2.",
+          "href": "https://www.lawsonfirm.com/en/georgia-wrongful-death-lawyer"
         },
         {
-          "title": "Jackknife and Rollover Crashes",
-          "description": "Catastrophic-injury cases on I-85 and I-285, why these wrecks usually involve catastrophic injury or wrongful death damages.",
-          "href": "#jackknife-rollover"
+          "title": "Case Results",
+          "description": "Recent commercial trucking and catastrophic injury verdicts and settlements handled by Lawson Personal Injury Attorneys.",
+          "href": "https://www.lawsonfirm.com/en/case-results"
         }
       ]
     },
@@ -429,24 +431,24 @@ export const topicalEntryGrid = {
       "label": "Motorcycle Accidents",
       "links": [
         {
-          "title": "Motorcycle Bias in Georgia Claims",
-          "description": "How insurance carriers use rider stereotypes to discount motorcycle claims and how Lawson Personal Injury Attorneys counters them.",
-          "href": "#motorcycle-bias"
+          "title": "Georgia Motorcycle Accident Lawyer",
+          "description": "Motorcycle cases involve insurer bias and Georgia comparative-fault rules. Yari Lawson pushes back on assumptions about rider conduct.",
+          "href": "https://www.lawsonfirm.com/en/georgia-motorcycle-accident-lawyer"
         },
         {
-          "title": "Lane Splitting and Georgia Law",
-          "description": "Georgia prohibits lane splitting; how that statute affects liability when a passenger vehicle changes lanes into a rider.",
-          "href": "#lane-splitting"
+          "title": "Georgia Pedestrian Accident Lawyer",
+          "description": "Pedestrian strikes often involve disputed fault and driver distraction. The firm investigates from scene to courtroom across metro Atlanta.",
+          "href": "https://www.lawsonfirm.com/en/georgia-pedestrian-accident-lawyer"
         },
         {
-          "title": "Road Hazard and Premises Cases",
-          "description": "When government entities or property owners can be held liable for dangerous road conditions that bring a motorcycle down.",
-          "href": "#road-hazards"
+          "title": "Georgia Brain Injury Lawyer",
+          "description": "Traumatic brain injury cases require life-care planning for future treatment, assistive equipment, and lost earning capacity. The firm builds damages accordingly.",
+          "href": "https://www.lawsonfirm.com/en/georgia-brain-injury-lawyer"
         },
         {
-          "title": "Helmets, Gear, and Damages",
-          "description": "How protective equipment use influences both the injury picture and the legal arguments insurers raise about comparative fault.",
-          "href": "#protective-gear"
+          "title": "Catastrophic Injury Lawyer",
+          "description": "Catastrophic motorcycle and pedestrian injuries demand a litigation-ready firm. Lawson Personal Injury Attorneys handles these cases statewide.",
+          "href": "https://www.lawsonfirm.com/en/catastrophic-injury-lawyer"
         }
       ]
     },
@@ -454,24 +456,24 @@ export const topicalEntryGrid = {
       "label": "Premises Liability",
       "links": [
         {
-          "title": "Slip and Fall on Commercial Property",
-          "description": "What Lawrenceville business owners must do to maintain safe premises and when they are liable for an invitee's injury under O.C.G.A. § 51-3-1.",
-          "href": "#commercial-slip-fall"
+          "title": "Georgia Slip and Fall Accident Lawyer",
+          "description": "What Lawrenceville business owners must do to maintain safe premises and when they are liable for an invitee's injury under O.C.G.A. Â§ 51-3-1.",
+          "href": "https://www.lawsonfirm.com/en/georgia-slip-and-fall-accident-lawyer"
         },
         {
-          "title": "Inadequate Security and Negligent Security",
-          "description": "When a property owner is responsible for criminal attacks because of poor lighting, unrepaired access controls, or ignored prior incidents.",
-          "href": "#inadequate-security"
+          "title": "Georgia Premises Liability Lawyer",
+          "description": "When a property owner is responsible for injuries because of poor lighting, unrepaired hazards, inadequate security, or ignored prior incidents.",
+          "href": "https://www.lawsonfirm.com/en/georgia-premises-liability-lawyer"
         },
         {
-          "title": "Dog Bite Liability in Georgia",
-          "description": "Georgia's dog bite statute (O.C.G.A. § 51-2-7), the \"first bite\" rule, and the evidence Lawson Personal Injury Attorneys gathers to prove the owner knew.",
-          "href": "#dog-bite-liability"
+          "title": "Georgia Dog Bite Lawyer",
+          "description": "Georgia's dog bite statute (O.C.G.A. Â§ 51-2-7), the \"first bite\" rule, and the evidence the firm gathers to prove the owner knew.",
+          "href": "https://www.lawsonfirm.com/en/georgia-dog-bite-lawyer"
         },
         {
-          "title": "Swimming Pool and Drowning Cases",
-          "description": "Premises liability for drownings and near-drownings tied to inadequate fencing, supervision, or warning signage.",
-          "href": "#swimming-pool-accidents"
+          "title": "Georgia Product Liability Lawyer",
+          "description": "Defective consumer products and equipment failures: design defects, manufacturing defects, and inadequate warnings under Georgia product liability law.",
+          "href": "https://www.lawsonfirm.com/en/georgia-product-liability-lawyer"
         }
       ]
     },
@@ -479,24 +481,24 @@ export const topicalEntryGrid = {
       "label": "Wrongful Death",
       "links": [
         {
-          "title": "Who Can File a Wrongful Death Claim",
+          "title": "Georgia Wrongful Death Lawyer",
           "description": "Georgia's wrongful death statute, the order of standing among surviving spouses, children, and parents, and how the estate's separate claim works.",
-          "href": "#wrongful-death-standing"
+          "href": "https://www.lawsonfirm.com/en/georgia-wrongful-death-lawyer"
         },
         {
-          "title": "Damages: The Full Value of the Life",
-          "description": "How Georgia juries are instructed to value the decedent's life, including economic and non-economic components.",
-          "href": "#wrongful-death-damages"
+          "title": "Catastrophic Injury Lawyer",
+          "description": "Catastrophic injury and wrongful death matters demand a litigation-first firm. Lawson Personal Injury Attorneys builds long-term damages models with qualified experts.",
+          "href": "https://www.lawsonfirm.com/en/catastrophic-injury-lawyer"
         },
         {
-          "title": "Fatal Accident Investigations",
-          "description": "How the firm works with reconstruction experts and medical examiners to prove fault in fatal car, truck, and motorcycle crashes.",
-          "href": "#fatal-investigations"
+          "title": "Case Results",
+          "description": "Recent wrongful death and catastrophic injury verdicts and settlements handled by the firm. Past results do not guarantee similar outcomes.",
+          "href": "https://www.lawsonfirm.com/en/case-results"
         },
         {
-          "title": "Wrongful Death Time Limits",
-          "description": "The Georgia statute of limitations for wrongful death and why early action protects evidence and witness memory.",
-          "href": "#wrongful-death-timeline"
+          "title": "About Lawson Personal Injury Attorneys",
+          "description": "Founded by Yari Lawson, a former prosecutor with 20+ years of trial experience. Lawrenceville-based, serving Gwinnett County and metro Atlanta.",
+          "href": "https://www.lawsonfirm.com/en/about"
         }
       ]
     }
