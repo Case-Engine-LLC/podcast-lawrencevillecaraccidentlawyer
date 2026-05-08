@@ -383,22 +383,26 @@ export const topicalEntryGrid = {
         {
           "title": "Georgia Car Accident Lawyer",
           "description": "Lawson Personal Injury Attorneys represents drivers and passengers injured in serious Georgia collisions, from I-85 crashes in Gwinnett County to surface-street wrecks in Lawrenceville.",
-          "href": "https://www.lawsonfirm.com/en/georgia-car-accident-lawyer"
+          "href": "https://www.lawsonfirm.com/en/georgia-car-accident-lawyer",
+          "image": "/topical/icon-pa-car.svg"
         },
         {
           "title": "Georgia Uber and Rideshare Accidents",
           "description": "Uber and Lyft collisions layer Georgia transportation rules over standard car-accident liability. Multiple insurance policies often apply to a single Atlanta-area crash.",
-          "href": "https://www.lawsonfirm.com/en/georgia-uber-accident-lawyer"
+          "href": "https://www.lawsonfirm.com/en/georgia-uber-accident-lawyer",
+          "image": "/topical/icon-pa-rideshare.svg"
         },
         {
           "title": "Case Results",
           "description": "Recent verdicts and settlements in Georgia personal injury matters handled by Yari Lawson and the firm. Past results do not guarantee similar outcomes.",
-          "href": "https://www.lawsonfirm.com/en/case-results"
+          "href": "https://www.lawsonfirm.com/en/case-results",
+          "image": "/topical/icon-svc-damages.svg"
         },
         {
           "title": "Free Consultation",
           "description": "Reach Lawson Personal Injury Attorneys directly. Free case review, contingency fee, no recovery means no fee.",
-          "href": "https://www.lawsonfirm.com/en#contact-us"
+          "href": "https://www.lawsonfirm.com/en#contact-us",
+          "image": "/topical/icon-phase-consult.svg"
         }
       ]
     },
@@ -408,22 +412,26 @@ export const topicalEntryGrid = {
         {
           "title": "Georgia Truck Accident Lawyer",
           "description": "The firm's commercial trucking practice: 18-wheelers, dump trucks, and fleet vehicles operating under Federal Motor Carrier Safety Regulations on Georgia interstates.",
-          "href": "https://www.lawsonfirm.com/en/georgia-truck-accident-lawyer"
+          "href": "https://www.lawsonfirm.com/en/georgia-truck-accident-lawyer",
+          "image": "/topical/icon-pa-truck.svg"
         },
         {
           "title": "Catastrophic Injury Lawyer",
           "description": "Truck crashes on I-85 and I-285 routinely produce catastrophic injuries. The firm builds life-care damages models with qualified experts.",
-          "href": "https://www.lawsonfirm.com/en/catastrophic-injury-lawyer"
+          "href": "https://www.lawsonfirm.com/en/catastrophic-injury-lawyer",
+          "image": "/topical/icon-pa-medical.svg"
         },
         {
           "title": "Georgia Wrongful Death Lawyer",
           "description": "Fatal trucking collisions trigger Georgia's wrongful death statute. Yari Lawson represents surviving spouses, children, and parents under O.C.G.A. Â§ 51-4-2.",
-          "href": "https://www.lawsonfirm.com/en/georgia-wrongful-death-lawyer"
+          "href": "https://www.lawsonfirm.com/en/georgia-wrongful-death-lawyer",
+          "image": "/topical/icon-pa-wrongful-death.svg"
         },
         {
           "title": "Case Results",
           "description": "Recent commercial trucking and catastrophic injury verdicts and settlements handled by Lawson Personal Injury Attorneys.",
-          "href": "https://www.lawsonfirm.com/en/case-results"
+          "href": "https://www.lawsonfirm.com/en/case-results",
+          "image": "/topical/icon-svc-damages.svg"
         }
       ]
     },
@@ -433,22 +441,26 @@ export const topicalEntryGrid = {
         {
           "title": "Georgia Motorcycle Accident Lawyer",
           "description": "Motorcycle cases involve insurer bias and Georgia comparative-fault rules. Yari Lawson pushes back on assumptions about rider conduct.",
-          "href": "https://www.lawsonfirm.com/en/georgia-motorcycle-accident-lawyer"
+          "href": "https://www.lawsonfirm.com/en/georgia-motorcycle-accident-lawyer",
+          "image": "/topical/icon-pa-moto.svg"
         },
         {
           "title": "Georgia Pedestrian Accident Lawyer",
           "description": "Pedestrian strikes often involve disputed fault and driver distraction. The firm investigates from scene to courtroom across metro Atlanta.",
-          "href": "https://www.lawsonfirm.com/en/georgia-pedestrian-accident-lawyer"
+          "href": "https://www.lawsonfirm.com/en/georgia-pedestrian-accident-lawyer",
+          "image": "/topical/icon-pa-pedestrian.svg"
         },
         {
           "title": "Georgia Brain Injury Lawyer",
           "description": "Traumatic brain injury cases require life-care planning for future treatment, assistive equipment, and lost earning capacity. The firm builds damages accordingly.",
-          "href": "https://www.lawsonfirm.com/en/georgia-brain-injury-lawyer"
+          "href": "https://www.lawsonfirm.com/en/georgia-brain-injury-lawyer",
+          "image": "/topical/icon-svc-investigate.svg"
         },
         {
           "title": "Catastrophic Injury Lawyer",
           "description": "Catastrophic motorcycle and pedestrian injuries demand a litigation-ready firm. Lawson Personal Injury Attorneys handles these cases statewide.",
-          "href": "https://www.lawsonfirm.com/en/catastrophic-injury-lawyer"
+          "href": "https://www.lawsonfirm.com/en/catastrophic-injury-lawyer",
+          "image": "/topical/icon-pa-medical.svg"
         }
       ]
     },
@@ -458,22 +470,26 @@ export const topicalEntryGrid = {
         {
           "title": "Georgia Slip and Fall Accident Lawyer",
           "description": "What Lawrenceville business owners must do to maintain safe premises and when they are liable for an invitee's injury under O.C.G.A. Â§ 51-3-1.",
-          "href": "https://www.lawsonfirm.com/en/georgia-slip-and-fall-accident-lawyer"
+          "href": "https://www.lawsonfirm.com/en/georgia-slip-and-fall-accident-lawyer",
+          "image": "/topical/icon-svc-investigate.svg"
         },
         {
           "title": "Georgia Premises Liability Lawyer",
           "description": "When a property owner is responsible for injuries because of poor lighting, unrepaired hazards, inadequate security, or ignored prior incidents.",
-          "href": "https://www.lawsonfirm.com/en/georgia-premises-liability-lawyer"
+          "href": "https://www.lawsonfirm.com/en/georgia-premises-liability-lawyer",
+          "image": "/topical/icon-svc-liability.svg"
         },
         {
           "title": "Georgia Dog Bite Lawyer",
           "description": "Georgia's dog bite statute (O.C.G.A. Â§ 51-2-7), the \"first bite\" rule, and the evidence the firm gathers to prove the owner knew.",
-          "href": "https://www.lawsonfirm.com/en/georgia-dog-bite-lawyer"
+          "href": "https://www.lawsonfirm.com/en/georgia-dog-bite-lawyer",
+          "image": "/topical/icon-pa-medical.svg"
         },
         {
           "title": "Georgia Product Liability Lawyer",
           "description": "Defective consumer products and equipment failures: design defects, manufacturing defects, and inadequate warnings under Georgia product liability law.",
-          "href": "https://www.lawsonfirm.com/en/georgia-product-liability-lawyer"
+          "href": "https://www.lawsonfirm.com/en/georgia-product-liability-lawyer",
+          "image": "/topical/icon-svc-defense.svg"
         }
       ]
     },
@@ -483,22 +499,26 @@ export const topicalEntryGrid = {
         {
           "title": "Georgia Wrongful Death Lawyer",
           "description": "Georgia's wrongful death statute, the order of standing among surviving spouses, children, and parents, and how the estate's separate claim works.",
-          "href": "https://www.lawsonfirm.com/en/georgia-wrongful-death-lawyer"
+          "href": "https://www.lawsonfirm.com/en/georgia-wrongful-death-lawyer",
+          "image": "/topical/icon-pa-wrongful-death.svg"
         },
         {
           "title": "Catastrophic Injury Lawyer",
           "description": "Catastrophic injury and wrongful death matters demand a litigation-first firm. Lawson Personal Injury Attorneys builds long-term damages models with qualified experts.",
-          "href": "https://www.lawsonfirm.com/en/catastrophic-injury-lawyer"
+          "href": "https://www.lawsonfirm.com/en/catastrophic-injury-lawyer",
+          "image": "/topical/icon-pa-medical.svg"
         },
         {
           "title": "Case Results",
           "description": "Recent wrongful death and catastrophic injury verdicts and settlements handled by the firm. Past results do not guarantee similar outcomes.",
-          "href": "https://www.lawsonfirm.com/en/case-results"
+          "href": "https://www.lawsonfirm.com/en/case-results",
+          "image": "/topical/icon-svc-damages.svg"
         },
         {
           "title": "About Lawson Personal Injury Attorneys",
           "description": "Founded by Yari Lawson, a former prosecutor with 20+ years of trial experience. Lawrenceville-based, serving Gwinnett County and metro Atlanta.",
-          "href": "https://www.lawsonfirm.com/en/about"
+          "href": "https://www.lawsonfirm.com/en/about",
+          "image": "/topical/icon-phase-resolve.svg"
         }
       ]
     }
