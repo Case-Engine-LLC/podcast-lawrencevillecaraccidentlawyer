@@ -3,9 +3,7 @@
  * Sourced from the firm's Podcast Show Bible (zip_195524) on 2026-04-30.
  * Fields flagged "NEEDS CONFIRMATION" in the Bible are left at neutral defaults
  * rather than fabricated.
- */
-
-export const siteConfig = {
+ */export const siteConfig = {
   "podcastName": "Lawrenceville Car Accident Law w. Yari Lawson",
   "tagline": "We Don't Flinch",
   "podcastUrl": "https://podcast-lawrencevillecaraccidentlawyer.vercel.app",
@@ -227,11 +225,11 @@ export const stats = {
   "reviewCount": 0,
   "satisfactionRate": 0,
   "satisfactionLabel": "",
-  "satisfactionVerbalization": "TODO: Populate from verified third-party review platform data (Google Business Profile, Avvo) before launch. Per the Georgia Rules of Professional Conduct, numeric claims about client satisfaction require substantiation.",
+  "satisfactionVerbalization": "",
   "casesHandled": 20,
   "casesLabel": "20+ Years of Trial Experience",
   "casesVerbalization": "Yari Lawson brings more than 20 years of Georgia trial experience and a former-prosecutor's perspective on how the defense will attack every case. Past results do not guarantee similar outcomes.",
-  "ratingVerbalization": "TODO: Populate rating and review count from Lawson Personal Injury Attorneys' verified Google Business Profile. Per Georgia RPC 7.1, star-rating claims require citation to the verifiable source."
+  "ratingVerbalization": "' verified Google Business Profile. Per Georgia RPC 7.1, star-rating claims require citation to the verifiable source"
 };
 
 export const navigation = {
