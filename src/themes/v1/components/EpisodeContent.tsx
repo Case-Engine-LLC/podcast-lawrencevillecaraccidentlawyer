@@ -30,7 +30,9 @@ const EpisodeContent = ({ episode, transcript }: EpisodeContentProps) => {
   const [activeTab, setActiveTab] = useState('Overview')
   const [isExpanded, setIsExpanded] = useState(false)
 
-  const tabs = ['Overview', 'Transcript', 'Key Takeaways']
+  const tabs = episodeTranscript.length > 0
+    ? ['Overview', 'Transcript', 'Key Takeaways']
+    : ['Overview', 'Key Takeaways']
   const youtubeEmbed = getYouTubeEmbedUrl(episode?.youtubeUrl)
 
   return (
@@ -119,8 +121,8 @@ const EpisodeContent = ({ episode, transcript }: EpisodeContentProps) => {
               </>
             )}
 
-            {/* Transcript Tab */}
-            {activeTab === 'Transcript' && (
+            {/* Transcript Tab — only renders when transcript data exists */}
+            {activeTab === 'Transcript' && episodeTranscript.length > 0 && (
               <>
                 <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
                   Episode Transcript
