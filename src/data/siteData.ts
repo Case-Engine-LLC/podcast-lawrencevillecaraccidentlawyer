@@ -13,7 +13,7 @@
   },
   "formCTA": {
     "text": "Free Consultation",
-    "href": "#form"
+    "href": "https://www.lawsonfirm.com/en#contact-us"
   },
   "firmUrl": "https://www.lawsonfirm.com/en"
 };
@@ -245,7 +245,8 @@ export const navigation = {
     },
     {
       "name": "Contact",
-      "href": "#contact"
+      "href": "https://www.lawsonfirm.com/en#contact-us",
+      "external": true
     }
   ],
   "ctaText": "Subscribe",
