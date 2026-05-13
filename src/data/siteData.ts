@@ -263,7 +263,12 @@ export const footer = {
     "facebook": "#",
     "instagram": "#",
     "youtube": "#"
-  }
+  },
+  socialLinks: {
+      "facebook": "https://www.facebook.com/lawsonlawPC/",
+      "instagram": "https://www.instagram.com/lawsonlawatl/",
+      "linkedin": "https://www.linkedin.com/in/yari-lawson-1426388"
+  },
 };
 
 export const awards = [
@@ -377,6 +382,7 @@ export const podcastTeam = [
 
 export const topicalEntryGrid = {
   "title": "Explore Georgia Personal Injury Topics",
+  "description": "Browse the Georgia accident topics Yari Lawson covers on the podcast. Each card links to a deeper resource from Lawson Personal Injury Attorneys on that situation.",
   "tabs": [
     {
       "label": "Car Accidents",
