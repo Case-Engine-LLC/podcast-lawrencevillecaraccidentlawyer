@@ -258,17 +258,13 @@ export const footer = {
   "description": "Lawrenceville Car Accident Law w. Yari Lawson is the firm's owned-funnel podcast. Yari is the Principal Trial Attorney at Lawson Personal Injury Attorneys, a former prosecutor with 20+ years of courtroom experience serving Lawrenceville, Gwinnett County, and the broader metro Atlanta area. Serious injuries demand relentless lawyers.",
   "copyright": "Lawson Personal Injury Attorneys",
   "socialLinks": {
+    "facebook": "https://www.facebook.com/lawsonlawPC/",
+    "instagram": "https://www.instagram.com/lawsonlawatl/",
+    "linkedin": "https://www.linkedin.com/in/yari-lawson-1426388",
     "twitter": "#",
-    "linkedin": "#",
-    "facebook": "#",
-    "instagram": "#",
-    "youtube": "#"
-  },
-  socialLinks: {
-      "facebook": "https://www.facebook.com/lawsonlawPC/",
-      "instagram": "https://www.instagram.com/lawsonlawatl/",
-      "linkedin": "https://www.linkedin.com/in/yari-lawson-1426388"
-  },
+    "youtube": "#",
+    "tiktok": ""
+  }
 };
 
 export const awards = [
