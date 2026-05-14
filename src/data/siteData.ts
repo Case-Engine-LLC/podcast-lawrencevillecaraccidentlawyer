@@ -20,6 +20,7 @@
 
 export const episode = {
   "number": 1,
+  "slug": "what-to-do-after-a-car-accident-in-lawrenceville-georgia",
   "title": "What to Do After a Car Accident in Lawrenceville, Georgia",
   "date": "01.15.24",
   "duration": "00:45:30",
