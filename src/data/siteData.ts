@@ -311,6 +311,7 @@ export const subscribeCTA = {
 export const episodes = [
   {
     "id": 1,
+    "slug": "what-to-do-after-a-car-accident-in-lawrenceville-georgia",
     "number": 1,
     "title": "What to Do After a Car Accident in Lawrenceville, Georgia",
     "subtitle": "Episode 1 â€¢ Lawson Personal Injury Attorneys",
@@ -338,6 +339,7 @@ export const episodes = [
   },
   {
     "id": 2,
+    "slug": "truck-accidents-on-i-85-and-i-285-why-they-are-different",
     "number": 2,
     "title": "Truck Accidents on I-85 and I-285: Why They Are Different",
     "subtitle": "Episode 2 â€¢ Lawson Personal Injury Attorneys",
