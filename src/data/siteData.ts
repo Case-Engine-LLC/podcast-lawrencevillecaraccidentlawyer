@@ -335,7 +335,7 @@ export const episodes = [
       "When to call a lawyer and what to expect",
       "Common early mistakes that tank an injury case"
     ],
-    "logo": "/images/logo.svg",
+    "logo": "",
     "youtubeUrl": ""
   },
   {
@@ -363,7 +363,7 @@ export const episodes = [
       "Preserving electronic logging data and black box evidence",
       "Building damages in a catastrophic injury or wrongful death claim"
     ],
-    "logo": "/images/logo.svg",
+    "logo": "",
     "youtubeUrl": ""
   }
 ];
