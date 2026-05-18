@@ -1,5 +1,7 @@
+import type { Metadata } from 'next'
 import V1EpisodePage from '@/themes/v1/pages/V1EpisodePage'
 import { getAllEpisodes, getEpisodeByIdOrSlug, getEpisodeTranscript } from '@/lib/data'
+import { siteConfig } from '@/data/siteData'
 
 export const revalidate = 3600
 
@@ -9,6 +11,44 @@ export async function generateStaticParams() {
     return episodes.map(ep => ({ id: ep.slug ?? String(ep.id) }))
   } catch {
     return []
+  }
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
+  const { id } = await params
+  const episode = await getEpisodeByIdOrSlug(id)
+
+  if (!episode) {
+    return { title: 'Episode Not Found' }
+  }
+
+  const description = episode.description.length > 200
+    ? episode.description.slice(0, 200) + '...'
+    : episode.description
+  const podcastUrl = (siteConfig.podcastUrl || '').replace(/\/$/, '')
+  const imageUrl = episode.logo || `${podcastUrl}/Hero.jpg`
+  const canonicalPath = `/episode/${episode.slug ?? episode.id}`
+
+  return {
+    title: `${episode.title} | ${siteConfig.podcastName}`,
+    description,
+    alternates: {
+      canonical: canonicalPath,
+    },
+    openGraph: {
+      title: episode.title,
+      description,
+      url: `${podcastUrl}${canonicalPath}`,
+      siteName: siteConfig.podcastName,
+      type: 'article',
+      images: [{ url: imageUrl, width: 1200, height: 630, alt: episode.title }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: episode.title,
+      description,
+      images: [imageUrl],
+    },
   }
 }
 
