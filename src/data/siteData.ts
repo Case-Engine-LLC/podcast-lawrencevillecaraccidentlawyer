@@ -173,51 +173,51 @@ export const content = {
 export const testimonials = [
   {
     "id": 1,
-    "name": "Michael T.",
-    "initials": "MT",
-    "role": "Google Reviewer",
+    "name": "Troy R.",
+    "initials": "TR",
+    "role": "Verified Client",
     "rating": 5,
-    "text": "Yari Lawson and the team at Lawson Personal Injury Attorneys handled my car accident case with professionalism and compassion. They kept me informed every step of the way and secured a settlement that exceeded my expectations. I highly recommend them to anyone in Lawrenceville dealing with a personal injury."
+    "text": "Yari Lawson and his paralegal, Lizzy, were incredible in helping me with my case. I was involved in a severe accident and did not understand how to proceed with my claim and the insurance company. Yari walked me through the claim process, explaining how most insurance cases are handled. Yari was extremely professional, personable, and communicative. His knowledge of legal strategies, balanced with quality of service, laid the foundation for a favorable outcome for me. I would recommend the Lawson Personal Injury Attorneys to anyone."
   },
   {
     "id": 2,
-    "name": "Jennifer R.",
-    "initials": "JR",
-    "role": "Google Reviewer",
+    "name": "Damita C.",
+    "initials": "DC",
+    "role": "Verified Client",
     "rating": 5,
-    "text": "After my truck accident, I was overwhelmed and didn't know where to turn. Yari Lawson took the time to explain the legal process and fought hard for my rights. The settlement allowed me to focus on recovery without financial stress. I'm grateful for their dedication."
+    "text": "I was referred to Attorney Lawson by a prominent high profile Lawyer!! Attorney Lawson was very professional return phone calls, texts and emails! When I spoke to Attorney Lawson he took my case on short notice without never meeting me! It's good to have a great relationship with people!! I highly recommend anybody looking for an attorney to contact Attorney Lawson!!"
   },
   {
     "id": 3,
-    "name": "David M.",
+    "name": "D. Michael",
     "initials": "DM",
-    "role": "Google Reviewer",
+    "role": "Verified Client",
     "rating": 5,
-    "text": "The Lawson firm handled my slip and fall case with expertise and care. Yari Lawson personally made sure I understood my options and worked tirelessly to hold the property owner accountable. Their attention to detail made all the difference in my case outcome."
+    "text": "Extremely satisfied. Mr. Lawson's professionalism, expertise, responsiveness, and communication skills are top-notch. Would definitely recommend."
   },
   {
     "id": 4,
-    "name": "Sarah K.",
-    "initials": "SK",
-    "role": "Google Reviewer",
+    "name": "Ashley T.",
+    "initials": "AT",
+    "role": "Verified Client",
     "rating": 5,
-    "text": "I cannot say enough good things about Yari Lawson and the entire team. They handled my motorcycle accident case with such professionalism and secured compensation that covered all my medical bills and lost wages. They truly care about their clients in Lawrenceville."
+    "text": "Lawson Law Firm gets it done!!!! Beyond pleased with the high level of professionalism, and excellent quality of service provided by the firm, during my personal injury claim!!! If you want RESULTS!!!! I highly recommend!!!!"
   },
   {
     "id": 5,
-    "name": "Robert P.",
-    "initials": "RP",
-    "role": "Google Reviewer",
+    "name": "Z P.",
+    "initials": "ZP",
+    "role": "Verified Client",
     "rating": 5,
-    "text": "Yari Lawson is an outstanding attorney who genuinely fights for justice. After my pedestrian accident, the insurance company tried to deny my claim, but Yari didn't back down. The result was a fair settlement that changed my life. Highly recommended for anyone needing a personal injury lawyer."
+    "text": "I rarely ever post a review but in this case I'm making an exception due to the high quality staff that I encountered while working with the Lawson Law Firm. Not only was the staff kind and understanding, but when speaking with Mr. Brandon Scales I felt comfortable. He took his time to educate me about the overall process and the likely outcomes. I could tell he listened and truly cared about my overall situation. Having not only a great attorney on my side but having caring staff members was priceless."
   },
   {
     "id": 6,
-    "name": "Amanda L.",
-    "initials": "AL",
-    "role": "Google Reviewer",
+    "name": "Roderick B.",
+    "initials": "RB",
+    "role": "Verified Client",
     "rating": 5,
-    "text": "Working with Lawson Personal Injury Attorneys was the best decision I made after my accident. Yari Lawson is knowledgeable, responsive, and truly cares about clients. They made a difficult time much easier and delivered results that exceeded what I thought was possible."
+    "text": "Attorney Yari Lawson is a person of impeccable character. He has shown dedication to the community and has shown himself to be intelligent and dedicated to providing stellar legal service to the community. I would highly recommend him to anyone in need of legal services."
   }
 ];
 
