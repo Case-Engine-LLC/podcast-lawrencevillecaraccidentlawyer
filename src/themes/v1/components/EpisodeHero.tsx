@@ -13,6 +13,8 @@ const EpisodeHero = ({ episode: propEpisode }: EpisodeHeroProps) => {
   const ep = propEpisode ?? staticEpisode
   const [descExpanded, setDescExpanded] = useState(false)
   const episodesData = propEpisode ? [propEpisode] : staticEpisodesData
+  const fallbackArt = episodesData.find((e) => (e as { logo?: string }).logo && (e as { logo?: string }).logo!.trim() !== '')?.logo as string | undefined
+  const coverImage = (ep as { logo?: string }).logo || fallbackArt
   return (
     <>
       {/* Marquee Banner */}
@@ -125,11 +127,17 @@ const EpisodeHero = ({ episode: propEpisode }: EpisodeHeroProps) => {
             {/* Right Image — Episode Thumbnail */}
             <div className="relative w-full h-[280px] md:h-[380px] flex items-center justify-center">
               <div className="w-full h-full rounded-2xl overflow-hidden">
-                <img
-                  src={(ep as { logo?: string }).logo || "/episode-art.avif"}
-                  alt={ep.title}
-                  className="w-full h-full object-cover object-top"
-                />
+                {coverImage ? (
+                  <img
+                    src={coverImage}
+                    alt={ep.title}
+                    className="w-full h-full object-cover object-top"
+                  />
+                ) : (
+                  <div className="w-full h-full bg-gray-200 flex items-center justify-center">
+                    <span className="text-sm text-gray-500">Ep {ep.number}</span>
+                  </div>
+                )}
               </div>
             </div>
           </div>

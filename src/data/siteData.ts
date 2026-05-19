@@ -335,7 +335,7 @@ export const episodes = [
       "When to call a lawyer and what to expect",
       "Common early mistakes that tank an injury case"
     ],
-    "logo": "",
+    "logo": "/cover-placeholder.jpg",
     "youtubeUrl": ""
   },
   {

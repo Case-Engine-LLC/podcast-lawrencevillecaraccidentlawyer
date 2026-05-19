@@ -23,6 +23,7 @@ function toSentenceBoundary(text: string, maxChars = 360): string {
 
 const LatestEpisodes = ({ episodes: propEpisodes }: LatestEpisodesProps) => {
   const episodesData = propEpisodes ?? staticEpisodesData
+  const fallbackArt = episodesData.find((e) => (e as { logo?: string }).logo && (e as { logo?: string }).logo!.trim() !== '')?.logo as string | undefined
   const [activeTopic, setActiveTopic] = useState('All')
   const [viewMode, setViewMode] = useState<'list' | 'grid'>('list')
   const [showAll, setShowAll] = useState(false)
@@ -128,11 +129,15 @@ const LatestEpisodes = ({ episodes: propEpisodes }: LatestEpisodesProps) => {
                   {/* Episode Image */}
                   <div className="md:col-span-4">
                     <div className="w-full aspect-square bg-gray-700 rounded-2xl flex items-center justify-center overflow-hidden">
-                      <img
-                        src={episode.logo || "/episode-art.avif"}
-                        alt={episode.title}
-                        className="w-full h-full object-cover"
-                      />
+                      {(episode.logo || fallbackArt) ? (
+                        <img
+                          src={episode.logo || fallbackArt}
+                          alt={episode.title}
+                          className="w-full h-full object-cover"
+                        />
+                      ) : (
+                        <span className="text-sm text-white/60">Ep {episode.number}</span>
+                      )}
                     </div>
                   </div>
 
