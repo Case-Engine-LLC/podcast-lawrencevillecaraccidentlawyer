@@ -9,10 +9,24 @@ import { siteConfig, attorney, contact, episode } from '@/data/siteData'
 import type { Episode } from '@/lib/data'
 import type { TranscriptSegment } from '@/lib/rss'
 
-const SITE_URL = contact.website
+const SITE_URL = siteConfig.podcastUrl.replace(/\/$/, '')
 
-export function generateEpisodeSchema(episodeId: string) {
-  const episodeUrl = `${SITE_URL}/episode/${episodeId}`
+type SchemaEpisode = {
+  id?: number
+  slug?: string
+  number: number
+  title: string
+  description: string
+  duration: string
+  audioUrl?: string
+  audioType?: string
+}
+
+export function generateEpisodeSchema(resolvedEpisode: Episode | null | undefined, episodeId: string) {
+  const currentEpisode: SchemaEpisode = resolvedEpisode ?? episode
+  const slugPart = resolvedEpisode?.slug ?? episodeId
+  const episodeUrl = `${SITE_URL}/episode/${slugPart}`
+  const rssFeedUrl = (siteConfig as { rssFeedUrl?: string }).rssFeedUrl
 
   return {
     '@context': 'https://schema.org',
@@ -21,9 +35,9 @@ export function generateEpisodeSchema(episodeId: string) {
         '@type': 'WebPage',
         '@id': `${episodeUrl}#webpage`,
         'url': episodeUrl,
-        'name': `${episode.title} | ${siteConfig.podcastName}`,
-        'headline': episode.title,
-        'description': episode.description,
+        'name': `${currentEpisode.title} | ${siteConfig.podcastName}`,
+        'headline': currentEpisode.title,
+        'description': currentEpisode.description,
         'inLanguage': 'en',
         'isPartOf': { '@id': `${SITE_URL}/#website` },
         'speakable': {
@@ -34,13 +48,20 @@ export function generateEpisodeSchema(episodeId: string) {
       {
         '@type': 'PodcastEpisode',
         '@id': `${episodeUrl}#episode`,
-        'name': episode.title,
-        'description': episode.description,
+        'name': currentEpisode.title,
+        'description': currentEpisode.description,
         'url': episodeUrl,
-        'episodeNumber': episode.number,
-        'duration': `PT${episode.duration.replace(':', 'H').replace(':', 'M')}S`,
+        'episodeNumber': currentEpisode.number,
+        'duration': `PT${currentEpisode.duration.replace(':', 'H').replace(':', 'M')}S`,
         'partOfSeries': { '@id': `${SITE_URL}/#podcast` },
         'productionCompany': { '@id': `${SITE_URL}/#org` },
+        'associatedMedia': currentEpisode.audioUrl
+          ? {
+              '@type': 'MediaObject',
+              'contentUrl': currentEpisode.audioUrl,
+              'encodingFormat': currentEpisode.audioType || 'audio/mpeg',
+            }
+          : undefined,
         'speakable': {
           '@type': 'SpeakableSpecification',
           'name': ['name', 'description'],
@@ -52,6 +73,7 @@ export function generateEpisodeSchema(episodeId: string) {
         'name': siteConfig.podcastName,
         'url': SITE_URL,
         'inLanguage': 'en',
+        'webFeed': rssFeedUrl,
       },
       {
         '@type': ['LegalService', 'Organization'],
@@ -73,7 +95,7 @@ interface V1EpisodePageProps {
 }
 
 const V1EpisodePage = ({ episodeId, episode: rssEpisode, allEpisodes, transcript }: V1EpisodePageProps) => {
-  const schema = generateEpisodeSchema(episodeId)
+  const schema = generateEpisodeSchema(rssEpisode, episodeId)
 
   return (
     <div className="bg-white min-h-screen overflow-x-hidden">
@@ -90,7 +112,7 @@ const V1EpisodePage = ({ episodeId, episode: rssEpisode, allEpisodes, transcript
         <FAQ />
       </main>
 
-      <Footer />
+      <Footer episodes={allEpisodes} />
     </div>
   )
 }

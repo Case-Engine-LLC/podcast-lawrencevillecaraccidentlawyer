@@ -17,7 +17,7 @@ import Footer from '../components/Footer'
 import { siteConfig, attorney, contact, episode } from '@/data/siteData'
 import type { Episode } from '@/lib/data'
 
-const SITE_URL = contact.website
+const SITE_URL = siteConfig.podcastUrl.replace(/\/$/, '')
 
 const homeSchema = {
   '@context': 'https://schema.org',
@@ -96,7 +96,7 @@ const V1Home = ({ episodes }: V1HomeProps) => {
         <ContactSection />
       </main>
 
-      <Footer />
+      <Footer episodes={episodes} />
     </div>
   )
 }
