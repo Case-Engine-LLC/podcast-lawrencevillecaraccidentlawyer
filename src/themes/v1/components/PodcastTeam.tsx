@@ -69,13 +69,13 @@ const PodcastTeam = () => {
       {/* Content */}
       <div className="relative z-10 max-w-container mx-auto px-6 md:px-12">
         {/* Mobile Slider */}
-        <div className="md:hidden relative">
-          <div className="w-full flex justify-center items-end relative overflow-hidden">
+        <div className="relative md:hidden">
+          <div className="w-full overflow-hidden rounded-2xl bg-white/5">
             <img
               key={currentSlide}
               src={teamMembers[currentSlide].image}
               alt={teamMembers[currentSlide].name}
-              className="w-full h-auto object-contain"
+              className="max-h-[34rem] w-full object-contain object-bottom"
               style={{
                 animation: direction === 'right'
                   ? 'slideInRight 0.5s ease-out'
@@ -83,11 +83,13 @@ const PodcastTeam = () => {
               }}
             />
 
-            {/* Card */}
-            <div
-              onClick={() => handleAuthorClick(teamMembers[currentSlide].slug)}
-              className="absolute bottom-20 left-4 right-4 bg-white rounded-2xl shadow-lg p-4 cursor-pointer hover:shadow-xl transition-shadow"
-            >
+          </div>
+
+          {/* Keep the profile card below the portrait so it never covers the subject. */}
+          <div
+            onClick={() => handleAuthorClick(teamMembers[currentSlide].slug)}
+            className="mt-4 cursor-pointer rounded-2xl bg-white p-4 shadow-lg transition-shadow hover:shadow-xl"
+          >
               <div className="flex items-start justify-between mb-2">
                 <div className="flex items-center gap-2.5">
                   <img
@@ -105,7 +107,7 @@ const PodcastTeam = () => {
                 <button
                   onClick={(e) => {
                     e.stopPropagation()
-                    // TODO: Navigate to episodes page
+                    handleAuthorClick(teamMembers[currentSlide].slug)
                   }}
                   className="bg-secondary hover:bg-secondary-hover text-white text-xs font-semibold px-3 py-1.5 rounded-full whitespace-nowrap"
                 >
@@ -113,11 +115,10 @@ const PodcastTeam = () => {
                 </button>
               </div>
               <p className="text-gray-700 text-xs leading-relaxed">{teamMembers[currentSlide].bio}</p>
-            </div>
           </div>
 
-          {/* Navigation Arrows - Stay in place outside animated content */}
-          <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-4 z-20">
+          {/* Navigation Arrows */}
+          <div className="mt-6 flex justify-center gap-4">
             <button
               onClick={prevSlide}
               className="w-12 h-12 rounded-full bg-black hover:bg-gray-800 text-white flex items-center justify-center transition-colors"
@@ -162,17 +163,19 @@ const PodcastTeam = () => {
         {/* Desktop Grid */}
         <div className={`hidden md:grid gap-6 ${teamMembers.length === 1 ? 'grid-cols-1 max-w-2xl mx-auto' : 'grid-cols-2'}`}>
           {teamMembers.map((member, index) => (
-            <div key={index} className="w-full flex justify-center items-end relative">
-              <img
-                src={member.image}
-                alt={member.name}
-                className="w-full h-auto object-contain"
-              />
+            <div key={index} className="flex w-full flex-col">
+              <div className="overflow-hidden rounded-2xl bg-white/5">
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  className="max-h-[42rem] w-full object-contain object-bottom"
+                />
+              </div>
 
-              {/* Card */}
+              {/* Keep the profile card below the portrait so it never covers the subject. */}
               <div
                 onClick={() => handleAuthorClick(member.slug)}
-                className="absolute bottom-8 left-8 right-8 bg-white rounded-2xl shadow-lg p-5 cursor-pointer hover:shadow-xl transition-shadow"
+                className="mt-4 cursor-pointer rounded-2xl bg-white p-5 shadow-lg transition-shadow hover:shadow-xl"
               >
                 <div className="flex items-start justify-between mb-2.5">
                   <div className="flex items-center gap-3">
@@ -189,7 +192,7 @@ const PodcastTeam = () => {
                   <button
                     onClick={(e) => {
                       e.stopPropagation()
-                      // TODO: Navigate to episodes page
+                      handleAuthorClick(member.slug)
                     }}
                     className="bg-secondary hover:bg-secondary-hover text-white text-sm font-semibold px-4 py-2 rounded-full whitespace-nowrap"
                   >
