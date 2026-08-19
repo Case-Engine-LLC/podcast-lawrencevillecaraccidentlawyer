@@ -116,7 +116,7 @@ export const faqGroups = [
       {
         "question": "How often are new episodes released?",
         "level": "h3",
-        "answer": "New episodes drop weekly. The full format runs 60-90 minutes; shorter extension episodes run 20-30 minutes when the topic is tighter."
+        "answer": "New episodes are released on an ongoing basis - subscribe on Apple Podcasts or Spotify to be notified when each one drops. The full format runs 60-90 minutes; shorter extension episodes run 20-30 minutes when the topic is tighter."
       },
       {
         "question": "Who is this podcast for?",
@@ -160,7 +160,7 @@ export const faqGroups = [
 
 export const content = {
   "heroTitle": "Lawrenceville Car Accident Law w. Yari Lawson",
-  "heroDescription": "A weekly conversation with Yari Lawson, Principal Trial Attorney and former prosecutor, about how serious injury cases actually move through the Georgia courts. Episodes are recorded in Lawrenceville and built for people in Gwinnett County and the broader metro Atlanta area who have just been hurt and need to understand what happens next.",
+  "heroDescription": "A conversation with Yari Lawson, Principal Trial Attorney and former prosecutor, about how serious injury cases actually move through the Georgia courts. Episodes are recorded in Lawrenceville and built for people in Gwinnett County and the broader metro Atlanta area who have just been hurt and need to understand what happens next.",
   "articleTitle": "Plain-Language Injury Education for Gwinnett County and Metro Atlanta",
   "articleParagraphs": [
     "Most legal content in metro Atlanta either reads like a textbook or sounds like a sales pitch. This show fills the gap. Each episode takes one specific Georgia situation, a wreck on I-85, a slip and fall at a big box store, a dog bite in a Lawrenceville neighborhood, and walks through what the injured person actually needs to know. Not five tips. Not vague theory. The real thing.",
@@ -301,7 +301,7 @@ export const subscribeCTA = {
   "title": "Never Miss an Episode",
   "description": "Subscribe to Lawrenceville Car Accident Law w. Yari Lawson to get a working knowledge of how Georgia personal injury cases actually move from incident to resolution. Each episode is a single deep topic, recorded in Lawrenceville, hosted by a Principal Trial Attorney who has spent 20+ years inside Georgia courtrooms.",
   "highlights": [
-    "Get notified when new weekly episodes drop",
+    "Get notified when new episodes drop",
     "Hear how the defense and insurance companies build attacks before they happen",
     "Understand your rights under Georgia law and the Gwinnett County process",
     "Practical first steps you can take this week if you have just been injured",
