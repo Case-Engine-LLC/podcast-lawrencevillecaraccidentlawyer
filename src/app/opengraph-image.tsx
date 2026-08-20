@@ -136,7 +136,7 @@ export default function OgImage() {
               <span style={{ display: 'flex', color: '#93A0BE' }}>·</span>
               <span style={{ display: 'flex' }}>Car & truck accident law</span>
               <span style={{ display: 'flex', color: '#93A0BE' }}>·</span>
-              <span style={{ display: 'flex' }}>Weekly podcast</span>
+              <span style={{ display: 'flex' }}>Podcast</span>
             </div>
           )}
           <div style={{ display: 'flex', color: '#93A0BE', fontWeight: 600 }}>
