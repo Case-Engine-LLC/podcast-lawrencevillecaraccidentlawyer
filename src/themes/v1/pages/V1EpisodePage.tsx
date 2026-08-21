@@ -67,14 +67,7 @@ export function generateEpisodeSchema(resolvedEpisode: Episode | null | undefine
           'name': ['name', 'description'],
         },
       },
-      {
-        '@type': 'PodcastSeries',
-        '@id': `${SITE_URL}/#podcast`,
-        'name': siteConfig.podcastName,
-        'url': SITE_URL,
-        'inLanguage': 'en',
-        'webFeed': rssFeedUrl,
-      },
+      
       {
         '@type': ['LegalService', 'Organization'],
         '@id': `${SITE_URL}/#org`,
